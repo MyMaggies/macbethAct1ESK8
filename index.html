@@ -1,0 +1,1039 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Macbeth Act 1: Lessons 1 and 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<style>@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600..900&display=swap");
+
+/* =========================================================
+   Macbeth Act 1: storm on the heath
+   Day  = dawn storm: pale slate sky, heather purple, lightning gold
+   Night = the heath at night: indigo sky, lightning gold on everything that matters
+   ========================================================= */
+:root{
+  --bg:#DCE2EA; --panel:#FCFBF8; --panel2:#F0F2F7; --ink:#10151D; --muted:#465164; --line:#B4BECB; --line2:#8794A8;
+  --accent:#4E2A84; --accent-ink:#FFFFFF; --hl:#EAE2F6;
+  --gold:#7A5300; --goldbg:#FCF0C9; --lightning:#F5C02E; --lightning-ink:#1B1400;
+  --blood:#A81D2A; --ok:#1E6B49; --teal:#0F6672; --amber:#A4520F;
+  --mark:rgba(245,192,46,.55); --mark2:rgba(245,192,46,.85); --markfaint:rgba(245,192,46,.20);
+  --rule:rgba(168,29,42,.30);
+  --sky1:#A9B7CE; --sky2:#E9E1F1; --mist:rgba(255,255,255,.65);
+  --glow:rgba(255,236,170,.55); --glow2:rgba(120,90,190,.18);
+  --ground:#17231F; --ground-ink:#EAF0EE;
+  --spell1:#2C1758; --spell2:#5A2F9A;
+  --onfill:#FFFFFF; --violet:#4E2A84; --glow-rev:rgba(255,214,120,.55);
+  --scale:1;
+  --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%232E3752' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23E9E1F1'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23E9E1F1'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23E9E1F1'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%238E99B4' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%233E4866' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0F20; --panel:#151C33; --panel2:#1B2440; --ink:#EEF1F8; --muted:#AAB5CC; --line:#2F3B5E; --line2:#4A5B86;
+    --accent:#F5C02E; --accent-ink:#1B1400; --hl:rgba(245,192,46,.16);
+    --gold:#F5C02E; --goldbg:#2A2410; --lightning:#F5C02E; --lightning-ink:#1B1400;
+    --blood:#FF7A85; --ok:#6FD6A6; --teal:#6DD3DE; --amber:#FFAE6B; --onfill:#0B0F20; --violet:#B79CFF;
+    --mark:rgba(245,192,46,.32); --mark2:rgba(245,192,46,.55); --markfaint:rgba(245,192,46,.12);
+    --rule:rgba(245,192,46,.22);
+    --sky1:#080C1E; --sky2:#2C2558; --mist:rgba(170,150,255,.16);
+    --glow:rgba(120,100,220,.30); --glow2:rgba(245,192,46,.08); --glow-rev:rgba(245,192,46,.18);
+    --ground:#05070F; --ground-ink:#EEF1F8;
+    --spell1:#231A4F; --spell2:#3D2C86;
+    --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%2305070E' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23F5C02E'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%23171C3D' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%2306080F' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+    --bg:#0B0F20; --panel:#151C33; --panel2:#1B2440; --ink:#EEF1F8; --muted:#AAB5CC; --line:#2F3B5E; --line2:#4A5B86;
+    --accent:#F5C02E; --accent-ink:#1B1400; --hl:rgba(245,192,46,.16);
+    --gold:#F5C02E; --goldbg:#2A2410; --lightning:#F5C02E; --lightning-ink:#1B1400;
+    --blood:#FF7A85; --ok:#6FD6A6; --teal:#6DD3DE; --amber:#FFAE6B; --onfill:#0B0F20; --violet:#B79CFF;
+    --mark:rgba(245,192,46,.32); --mark2:rgba(245,192,46,.55); --markfaint:rgba(245,192,46,.12);
+    --rule:rgba(245,192,46,.22);
+    --sky1:#080C1E; --sky2:#2C2558; --mist:rgba(170,150,255,.16);
+    --glow:rgba(120,100,220,.30); --glow2:rgba(245,192,46,.08); --glow-rev:rgba(245,192,46,.18);
+    --ground:#05070F; --ground-ink:#EEF1F8;
+    --spell1:#231A4F; --spell2:#3D2C86;
+    --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%2305070E' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23F5C02E'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%23171C3D' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%2306080F' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+    color-scheme:dark;
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);font-size:calc(clamp(16px,1.05vw,24px) * var(--scale,1))}
+body{
+  height:100%;margin:0;color:var(--ink);
+  font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:1rem;line-height:1.4;
+  background:
+    radial-gradient(70rem 30rem at 92% -6%, var(--glow), transparent 65%),
+    radial-gradient(60rem 28rem at 0% 108%, var(--glow2), transparent 60%),
+    var(--bg);
+}
+body:has(.revise){background:radial-gradient(70rem 30rem at 92% -6%,var(--glow-rev),transparent 65%),radial-gradient(60rem 28rem at 0% 108%,var(--glow2),transparent 60%),var(--bg)}
+::selection{background:var(--lightning);color:var(--lightning-ink)}
+button{font:inherit;color:inherit;cursor:pointer;transition:transform .09s ease,box-shadow .09s ease,background-color .15s ease,border-color .15s ease}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:Literata,Georgia,"Times New Roman",serif}
+.pane{scrollbar-color:var(--line2) transparent;scrollbar-width:thin}
+#app{height:100%;display:flex;flex-direction:column}
+
+/* shared: icons drawn with masks so they take theme colours */
+.brand b::before,.head h2::before,.track::before,.word::before,.idea b::before,#timer::before{
+  content:"";display:inline-block;flex:none;
+  -webkit-mask:var(--ico,none) center/contain no-repeat;mask:var(--ico,none) center/contain no-repeat;
+}
+
+/* =========================================================
+   HEADER: the hero (sky, castle on the horizon, tartan ribbon)
+   ========================================================= */
+.top{
+  position:relative;z-index:5;display:flex;align-items:center;gap:1.3rem;flex-wrap:wrap;
+  padding:.7rem 1.3rem 1.05rem;
+  background:linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 100%);
+  border-bottom:0;isolation:isolate;
+}
+.top::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:var(--castle),var(--hills),radial-gradient(26rem 5rem at 30% 100%,var(--mist),transparent 72%),radial-gradient(20rem 4rem at 70% 96%,var(--mist),transparent 72%);
+  background-repeat:no-repeat;
+  background-size:auto 62%,100% 24%,220% 100%,180% 100%;
+  background-position:62% calc(100% - 12px),left bottom,0% 100%,0% 100%;
+}
+
+.top::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:9px;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 9px,rgba(245,192,46,.9) 9px 10px,transparent 10px 34px),
+    repeating-linear-gradient(90deg,rgba(168,29,42,.95) 0 4px,transparent 4px 34px),
+    repeating-linear-gradient(90deg,rgba(7,16,30,.75) 0 14px,transparent 14px 28px),
+    #1D5B45;
+}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand b{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  display:inline-flex;align-items:center;gap:.35rem;
+  font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:850;font-size:2.7rem;line-height:1;letter-spacing:.01em;
+  color:var(--ink);text-shadow:0 0 22px var(--glow);
+}
+.brand b::before{width:.62em;height:.9em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.5))}
+.brand span{
+  background:var(--lightning);color:var(--lightning-ink);font-weight:700;font-size:.95rem;
+  padding:.15rem .8rem;border-radius:999px;box-shadow:0 2px 0 rgba(16,21,29,.35);
+}
+#hours{display:flex;gap:.55rem}
+.seg{
+  display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-height:3.3rem;padding:.35rem 1.05rem;
+  background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2);
+}
+.seg b{font-size:1.05rem}
+.seg small{color:var(--muted);font-size:.8rem;max-width:16rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.seg:hover{transform:translateY(-1px);box-shadow:0 5px 0 var(--line2)}
+.seg:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.seg.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);box-shadow:0 4px 0 rgba(16,21,29,.45)}
+.seg.on small{color:var(--accent-ink);opacity:.85}
+.seg[data-view="revise"].on{background:var(--lightning);border-color:var(--lightning);color:var(--lightning-ink)}
+.seg[data-view="revise"].on small{color:var(--lightning-ink)}
+.tools{margin-left:auto;display:flex;gap:.5rem;position:relative}
+.tools>button{
+  min-height:2.75rem;padding:.3rem .95rem;background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 3px 0 var(--line2);
+}
+.tools>button:hover{transform:translateY(-1px)}
+.tools>button:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+#tmenu{
+  position:absolute;right:0;top:100%;margin-top:.5rem;z-index:8;min-width:10rem;padding:.5rem;
+  display:flex;flex-direction:column;gap:.4rem;background:var(--panel);border:2px solid var(--line2);border-radius:14px;box-shadow:0 14px 30px -10px rgba(8,10,25,.45);
+}
+#tmenu[hidden]{display:none}
+#tmenu button{min-height:2.6rem;background:var(--panel2);border:2px solid var(--line);border-radius:10px}
+#tmenu button:hover{border-color:var(--accent);background:var(--hl)}
+
+/* ---------- filter chips ---------- */
+.filters{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;padding:.7rem 1.3rem .1rem}
+.filters[hidden]{display:none}
+.fl{color:var(--muted);margin-right:.3rem}
+.chip{
+  --c:var(--ink);display:inline-flex;align-items:center;gap:.4rem;min-height:2.45rem;padding:.25rem .8rem;
+  background:var(--panel);border:2px solid var(--line);border-radius:999px;font-size:.95rem;box-shadow:0 3px 0 var(--line);
+}
+.chip .dot{width:.75rem;height:.75rem;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px var(--panel),0 0 0 3px var(--c)}
+.chip:hover{transform:translateY(-1px);border-color:var(--c)}
+.chip:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line)}
+.chip.on{border-color:var(--c);background:var(--hl);background:color-mix(in srgb,var(--c) 20%,var(--panel));font-weight:700;box-shadow:0 3px 0 var(--c)}
+.tg-ambition{--c:var(--gold)} .tg-banquo{--c:var(--teal)} .tg-fate{--c:var(--violet)} .tg-language{--c:var(--muted)}
+.tg-appearance{--c:var(--blood)} .tg-context{--c:var(--ok)} .tg-ahead{--c:var(--amber)} .tg-key13{--c:var(--gold)}
+
+/* =========================================================
+   STAGE + PANES
+   ========================================================= */
+.stage{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:1.5rem;padding:1.1rem 1.3rem 1.3rem}
+.pane{min-height:0;overflow:auto}
+.pane.wide{grid-column:1 / -1}
+.pane.script,.pane.side{animation:rise .35s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#panel>*{animation:rise .25s ease-out both}
+
+/* the script pane is the "manuscript" */
+.pane.script{
+  background:var(--panel);border:2px solid var(--line2);border-radius:16px;padding:1.2rem 1.7rem 2.2rem;
+  box-shadow:0 5px 0 var(--line2),0 26px 40px -26px rgba(8,10,25,.5);
+}
+.pane.script:has(.ln){
+  background:
+    linear-gradient(to right,transparent 4.3rem,var(--rule) 4.3rem,var(--rule) calc(4.3rem + 2px),transparent calc(4.3rem + 2px)) local,
+    var(--panel);
+}
+/* the side pane is the "margin note" */
+.pane.side{
+  background:var(--panel2);border:2px solid var(--line);border-top:9px solid var(--accent);border-radius:16px;padding:1rem 1.5rem 1.2rem;
+  box-shadow:0 5px 0 var(--line),0 26px 40px -26px rgba(8,10,25,.5);
+}
+
+/* headings inside panes */
+.head{margin-bottom:.4rem}
+.head .kick{
+  display:inline-block;background:var(--hl);color:var(--accent);font-weight:700;font-size:.9rem;padding:.12rem .8rem;border-radius:999px;
+}
+.head h2{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  display:flex;align-items:center;gap:.6rem;margin:.55rem 0 .1rem;font-size:1.75rem;line-height:1.2;font-weight:800;
+}
+.head h2::before{width:.6em;height:.85em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.45))}
+.head .sub{margin:.1rem 0 .3rem;color:var(--muted);font-size:1.1rem}
+.head::after{
+  content:"";display:block;width:8rem;height:.8rem;margin-top:.35rem;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' viewBox='0 0 24 12'%3E%3Cpath d='M0 6 6 1 12 11 18 1 24 6' fill='none' stroke='%23E3A912' stroke-width='2.6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left center/1.5rem .8rem;
+}
+
+/* =========================================================
+   THE SCRIPT (verse, speakers, annotations)
+   ========================================================= */
+.sp{
+  margin-top:1.1rem;padding-left:3rem;font-weight:700;color:var(--accent);font-size:1.1rem;
+}
+.sp::before{content:"";display:inline-block;width:.6rem;height:.6rem;margin-right:.55rem;border-radius:50%;background:var(--lightning);box-shadow:0 0 0 2px var(--accent);vertical-align:.08em}
+.stg,.gapline{padding-left:3rem;font-style:italic;color:var(--muted);font-family:Literata,Georgia,serif;font-size:1.25rem;margin:.5rem 0}
+.gapline{margin:1rem 0;border-top:2px dotted var(--line2);border-bottom:2px dotted var(--line2);padding-top:.6rem;padding-bottom:.6rem}
+.ln{display:grid;grid-template-columns:3rem 1fr;align-items:baseline}
+.ln .num{color:var(--muted);font-size:.85rem;text-align:right;padding-right:1.1rem;user-select:none;font-variant-numeric:tabular-nums}
+.ln .tx{font-family:Literata,Georgia,"Times New Roman",serif;font-size:1.6rem;line-height:1.5;text-wrap:pretty}
+.sd{font-style:italic;color:var(--muted);font-size:.85em}
+.foot{margin-top:1.5rem;color:var(--muted);font-size:.85rem;padding-left:3rem}
+
+/* annotated phrases: highlighter pen + underline */
+.ann{
+  cursor:pointer;border-radius:4px;padding:.02em .14em;
+  background:linear-gradient(transparent 52%,var(--mark) 52%);
+  text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:5px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-color .15s ease,box-shadow .15s ease;
+}
+.ann:hover{background:var(--mark2)}
+.ann.on{background:var(--mark2);box-shadow:0 0 0 3px var(--accent);text-decoration-color:transparent}
+.ann.dim{pointer-events:none;background:none;text-decoration-color:transparent}
+.ln.rng{cursor:pointer}
+.ln.rng .tx{
+  border-left:7px solid var(--lightning);padding-left:.75rem;margin-left:-.85rem;border-radius:0 8px 8px 0;
+  background:linear-gradient(90deg,var(--markfaint),transparent 80%);
+  box-shadow:inset 3px 0 0 var(--accent);transition:background-color .15s ease;
+}
+.ln.rng:hover .tx{background:linear-gradient(90deg,var(--mark),transparent 90%)}
+.ln.rng.on .tx{background:linear-gradient(90deg,var(--mark2),var(--markfaint) 92%);border-left-width:11px;margin-left:-1rem;padding-left:.8rem}
+.ln.rng.dim{pointer-events:none}
+.ln.rng.dim .tx{border-left-color:transparent;background:none;box-shadow:none}
+
+/* =========================================================
+   SIDE PANEL: notes, prompts, tiers
+   ========================================================= */
+.side h3{
+  font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:800;font-size:2.05rem;line-height:1.15;margin:.2rem 0 .55rem;letter-spacing:.005em;
+}
+.side p{font-size:1.15rem;line-height:1.45;margin:.15rem 0 .45rem}
+.side .lead{font-size:1.3rem}
+.side .hint{color:var(--muted)}
+.lab{
+  display:inline-block;margin-top:.9rem;padding:.1rem .8rem;border-radius:999px;background:var(--hl);color:var(--accent);
+  font-weight:700;font-size:.95rem;
+}
+.q{
+  position:relative;margin:.2rem 0 1rem;padding:.7rem 1rem .7rem 3.2rem;border-radius:12px;
+  background:var(--panel);border:2px solid var(--line);
+  font-family:Literata,Georgia,serif;font-style:italic;font-size:1.2rem;line-height:1.5;
+}
+.q::before{
+  content:"\201C";position:absolute;left:.6rem;top:-.05rem;font-family:"Grenze Gotisch",Literata,Georgia,serif;font-style:normal;font-weight:800;
+  font-size:3.6rem;line-height:1;color:var(--lightning);text-shadow:0 2px 0 rgba(16,21,29,.35);
+}
+.ptop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);margin-bottom:.5rem}
+.mini{min-height:2.4rem;padding:.15rem .85rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2)}
+.mini:hover{border-color:var(--accent)}
+.mini:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+
+/* "Ask the class" speech bubble */
+.ask{
+  position:relative;margin:1.4rem 0 .9rem;padding:.7rem 1.1rem;border-radius:16px;
+  background:var(--goldbg);border:3px solid var(--lightning);
+}
+.ask::after{
+  content:"";position:absolute;left:2rem;bottom:-.95rem;width:1.3rem;height:1.3rem;transform:rotate(45deg);
+  background:var(--goldbg);border-right:3px solid var(--lightning);border-bottom:3px solid var(--lightning);border-bottom-right-radius:5px;
+}
+.ask b{color:var(--gold);font-size:.95rem}
+.ask p{margin:.2rem 0 0;font-weight:700;font-size:1.25rem}
+
+.tierbtns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.ghost{
+  min-height:2.75rem;padding:.3rem 1.05rem;margin-top:.6rem;background:var(--panel);border:2px solid var(--accent);border-radius:12px;box-shadow:0 4px 0 var(--accent);color:var(--ink);
+}
+.ghost:hover{transform:translateY(-1px);background:var(--hl)}
+.ghost:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accent)}
+.small{min-height:2.45rem;font-size:.95rem;margin-top:0}
+.tierbtns .ghost{margin-top:0}
+button[data-t="sup"]{border-color:var(--teal);box-shadow:0 4px 0 var(--teal)}
+button[data-t="sup"]:active{box-shadow:0 1px 0 var(--teal)}
+button[data-t="str"]{border-color:var(--gold);box-shadow:0 4px 0 var(--gold);background:var(--goldbg)}
+button[data-t="str"]:active{box-shadow:0 1px 0 var(--gold)}
+.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 4px 0 rgba(16,21,29,.45)}
+.primary:hover{background:var(--accent)}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 .9rem}
+.tier{margin-top:.8rem;padding:.55rem .95rem;border-radius:12px;border:2px solid var(--teal);background:var(--panel);scroll-margin-bottom:5rem;animation:rise .25s ease-out both}
+.tier.str{border-color:var(--gold);background:var(--goldbg)}
+.tier[hidden]{display:none}
+.tier b{display:block;color:var(--muted);font-size:.9rem}
+.tagrow{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.tagrow .chip{min-height:0;padding:.12rem .75rem;font-size:.85rem;cursor:default;border-color:var(--c);box-shadow:none}
+.tagrow .chip:hover{transform:none}
+.notenav{
+  position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:1rem;padding:.75rem 0 .25rem;
+  border-top:2px solid var(--line);background:var(--panel2);
+}
+.notenav button{min-height:2.75rem;padding:.3rem 1.05rem;background:var(--panel);border:2px solid var(--accent);border-radius:12px;box-shadow:0 4px 0 var(--accent)}
+.notenav button:hover{background:var(--hl);transform:translateY(-1px)}
+.notenav button:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accent)}
+
+.think{border:3px solid var(--teal);border-radius:16px;padding:.7rem 1.1rem;margin:1rem 0;background:var(--panel)}
+.think b{color:var(--teal)}
+.think p{margin:.2rem 0 .4rem}
+
+/* =========================================================
+   AIMS SCREEN: learning intention, success criteria, word, path
+   ========================================================= */
+.li{margin:.8rem 0;padding:.3rem 0 .3rem 1.1rem;border-left:8px solid var(--lightning)}
+.li p{font-family:Literata,Georgia,serif;font-size:1.4rem;line-height:1.4;margin:.3rem 0 0}
+.sc{margin:.9rem 0}
+.sc ul{list-style:none;margin:.5rem 0 0;padding:0}
+.sc li{position:relative;padding-left:2.4rem;margin:.4rem 0;font-size:1.22rem;line-height:1.35}
+.sc li::before{content:"";position:absolute;left:0;top:.18em;width:1.35rem;height:1.35rem;border:3px solid var(--accent);border-radius:7px;background:var(--panel)}
+.stretchsc{
+  margin:.9rem 0 0;padding:.55rem 1rem;border-radius:12px;background:var(--goldbg);border:2px solid var(--lightning);border-left-width:8px;font-size:1.2rem;
+}
+.word{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z'/%3E%3C/svg%3E");
+  position:relative;margin:.9rem 0;padding:.7rem 1.3rem .7rem 3.6rem;border-radius:16px;font-size:1.15rem;line-height:1.4;
+  background:linear-gradient(135deg,var(--spell1),var(--spell2));color:#FFFFFF;border:3px solid var(--lightning);
+  box-shadow:0 5px 0 rgba(16,21,29,.4);
+}
+.word::before{position:absolute;left:1rem;top:1rem;width:1.7rem;height:1.7rem;background:var(--lightning)}
+.word b{color:var(--lightning)}
+.path{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem .2rem;padding:0;margin:.6rem 0 0;counter-reset:step}
+.path li{
+  counter-increment:step;display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem .35rem .4rem;border-radius:999px;
+  background:var(--panel);border:2px solid var(--line2);font-size:1rem;
+}
+.path li::before{
+  content:counter(step);display:inline-grid;place-items:center;flex:none;width:1.7rem;height:1.7rem;border-radius:50%;
+  background:var(--line2);color:var(--ink);font-weight:700;font-size:.85rem;
+}
+.path li:first-child{border-color:var(--accent);font-weight:700}
+.path li:first-child::before{background:var(--accent);color:var(--accent-ink)}
+.path li:last-child{border-color:var(--lightning);background:var(--goldbg)}
+.path li:last-child::before{background:var(--lightning);color:var(--lightning-ink)}
+.path li+li{margin-left:1.5rem;position:relative}
+.path li+li::after{content:"";position:absolute;left:-1.3rem;top:50%;width:1.1rem;height:3px;background:repeating-linear-gradient(90deg,var(--line2) 0 5px,transparent 5px 9px)}
+
+/* context: mystery cards */
+.fact.card{
+  position:relative;margin:.75rem 0;padding:.8rem 1.1rem .8rem 4.3rem;cursor:pointer;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);
+}
+.fact.card::before{
+  content:"?";position:absolute;left:1rem;top:.9rem;display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;
+  background:var(--accent);color:var(--accent-ink);font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:800;font-size:1.6rem;line-height:1;
+  box-shadow:0 3px 0 rgba(16,21,29,.4);
+}
+.fact.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.fact.card:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.fact h3{margin:0 0 .2rem;font-size:1.25rem}
+.fact .prompt{font-weight:700;color:var(--accent);font-size:1.25rem;margin:.1rem 0 0}
+.fact p{margin:0}
+.fact .txt{display:none;margin-top:.55rem;font-size:1.25rem;line-height:1.5}
+.fact .tap{display:block;color:var(--muted);font-size:.9rem;margin-top:.3rem}
+.fact.open{border-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.fact.open::before{content:"\2713";background:var(--ok);font-family:Atkinson Hyperlegible,system-ui,sans-serif;font-size:1.4rem}
+.fact.open .txt{display:block;animation:rise .25s ease-out both}
+.fact.open .tap{display:none}
+.idea{padding:.6rem 0;border-bottom:2px dotted var(--line2)}
+.idea:last-child{border-bottom:0}
+.idea b{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");display:flex;align-items:center;gap:.5rem;font-family:Literata,Georgia,serif;font-size:1.3rem}
+.idea b::before{width:.6em;height:.85em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.45))}
+.idea p{margin:0}
+
+/* =========================================================
+   GAP-FILLS, WORD BANK, TRACKER, QUICK CHECK
+   ========================================================= */
+.cloze{font-family:Literata,Georgia,serif;font-size:1.7rem;line-height:2.3;margin:0;max-width:44em;text-wrap:pretty}
+.gap{
+  display:inline-block;min-width:6.5em;text-align:center;margin:0 .1em;padding:0 .4em;line-height:1.6;cursor:pointer;vertical-align:baseline;
+  background:var(--hl);border:2px dashed var(--accent);border-radius:10px;
+}
+.gap:hover{background:var(--mark)}
+.gap sup{
+  display:inline-grid;place-items:center;width:1.5em;height:1.5em;margin-right:.35em;border-radius:50%;vertical-align:.15em;
+  background:var(--accent);color:var(--accent-ink);font-family:"Atkinson Hyperlegible",sans-serif;font-size:.55em;font-weight:700;
+}
+.gap .ans{visibility:hidden;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:700;font-size:.85em;color:var(--ok)}
+.gap.open{background:transparent;border-style:solid;border-color:var(--ok);animation:pop .25s ease-out both}
+.gap.open .ans{visibility:visible}
+@keyframes pop{from{transform:scale(.9)}60%{transform:scale(1.06)}to{transform:scale(1)}}
+.bank{display:flex;flex-wrap:wrap;gap:.55rem;margin:.5rem 0 1rem}
+.bank span{padding:.3rem .9rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2);font-size:1.15rem}
+.track{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  position:relative;margin-top:1rem;padding:.8rem 1.1rem .8rem 3.4rem;border-radius:16px;background:var(--goldbg);border:3px solid var(--lightning);
+}
+.track::before{position:absolute;left:1rem;top:.9rem;width:1.3rem;height:1.8rem;background:var(--gold)}
+.track p{margin:0;font-size:1.15rem}
+.hinge{margin-top:1.3rem;padding-top:.6rem;border-top:2px dotted var(--line2)}
+.hq{font-weight:700}
+.opt{
+  display:block;width:100%;text-align:left;margin:.5rem 0;padding:.55rem .95rem;min-height:2.9rem;font-size:1.05rem;
+  background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2);
+}
+.opt:hover:not(:disabled){transform:translateY(-1px);border-color:var(--accent)}
+.opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.opt.right{border-color:var(--ok);background:var(--hl);background:color-mix(in srgb,var(--ok) 18%,var(--panel));box-shadow:0 4px 0 var(--ok);font-weight:700}
+.opt.right::before{content:"\2713  "}
+.opt.wrong{border-color:var(--blood);text-decoration:line-through;box-shadow:0 4px 0 var(--blood)}
+.opt.wrong::before{content:"\2717  ";text-decoration:none;display:inline-block}
+.hres{margin-top:.6rem;font-size:1.1rem}
+
+/* exit ticket + self rating */
+.qa{position:relative;margin:.8rem 0;padding:.75rem 1.1rem;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);cursor:pointer}
+.qa:hover{transform:translateY(-2px);border-color:var(--accent)}
+.qa .lv{display:inline-block;margin-bottom:.35rem;padding:.02rem .75rem;border-radius:999px;background:var(--teal);color:var(--onfill);font-size:.8rem;font-weight:700}
+.qa.stretch .lv{background:var(--lightning);color:var(--lightning-ink)}
+.qa .qq{font-weight:700;font-size:1.2rem}
+.qa .aa{margin-top:.4rem;font-size:1.2rem;visibility:hidden;color:var(--ok);font-weight:700;height:0;overflow:hidden}
+.qa.open{border-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.qa.open .aa{visibility:visible;height:auto;animation:rise .25s ease-out both}
+.rate{padding:.65rem 0;border-bottom:2px dotted var(--line2)}
+.rate:last-child{border-bottom:0}
+.rate p{margin:0 0 .45rem;font-size:1.05rem}
+.rbtns{display:flex;gap:.45rem;flex-wrap:wrap}
+.rb{min-height:2.5rem;padding:.15rem .9rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2)}
+.rb:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.rb[data-rate$=":0"]{border-color:var(--blood);box-shadow:0 3px 0 var(--blood)}
+.rb[data-rate$=":1"]{border-color:var(--amber);box-shadow:0 3px 0 var(--amber)}
+.rb[data-rate$=":2"]{border-color:var(--ok);box-shadow:0 3px 0 var(--ok)}
+.rb.on{color:var(--onfill);font-weight:700;animation:pop .25s ease-out both}
+.rb.on::before{content:"\2713  "}
+.rb[data-rate$=":0"].on{background:var(--blood)}
+.rb[data-rate$=":1"].on{background:var(--amber)}
+.rb[data-rate$=":2"].on{background:var(--ok)}
+
+/* =========================================================
+   FOOTER: the heath ("ground") with step stones
+   ========================================================= */
+.nav{
+  position:relative;display:flex;align-items:center;gap:1rem;padding:1.05rem 1.3rem .75rem;
+  background:linear-gradient(180deg,#0E1815,var(--ground));color:var(--ground-ink);
+}
+.nav[hidden]{display:none}
+.nav::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:7px;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 9px,rgba(245,192,46,.9) 9px 10px,transparent 10px 34px),
+    repeating-linear-gradient(90deg,rgba(168,29,42,.95) 0 4px,transparent 4px 34px),
+    repeating-linear-gradient(90deg,rgba(7,16,30,.75) 0 14px,transparent 14px 28px),
+    #1D5B45;
+}
+.nav :focus-visible{outline-color:var(--lightning)}
+.btn{min-height:3.3rem;padding:.4rem 1.4rem;font-weight:700;background:var(--panel);color:var(--ink);border:2px solid var(--panel);border-radius:14px;box-shadow:0 4px 0 rgba(0,0,0,.55)}
+.btn:hover:not([disabled]){transform:translateY(-1px);background:var(--hl)}
+.btn:active:not([disabled]){transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.55)}
+.btn[disabled]{opacity:.35;cursor:default}
+.btn.primary{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning)}
+.btn.primary:hover:not([disabled]){background:var(--lightning);filter:brightness(1.06)}
+.pills{flex:1;display:flex;flex-wrap:wrap;gap:.45rem .35rem;justify-content:center}
+.pill{
+  display:inline-flex;align-items:center;gap:.5rem;min-height:2.45rem;padding:.2rem .8rem .2rem .3rem;font-size:.9rem;
+  background:var(--panel);color:var(--ink);border:2px solid transparent;border-radius:999px;box-shadow:0 3px 0 rgba(0,0,0,.55);
+}
+.pill:hover{transform:translateY(-1px)}
+.pill:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.55)}
+.pill .pn{display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;font-size:.8rem;font-weight:700;color:#fff;background:var(--line2)}
+.pill.aims .pn{background:#8A5F00}
+.pill.context .pn{background:var(--teal);color:var(--onfill)}
+.pill.extract .pn{background:var(--accent);color:var(--accent-ink)}
+.pill.link .pn{background:#5F6C80}
+.pill.plenary .pn{background:var(--blood);color:var(--onfill)}
+.pill.extract{font-weight:700}
+.pill.on{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning)}
+.pill.on .pn{background:var(--lightning-ink);color:var(--lightning)}
+
+/* timer */
+#timer{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  position:fixed;right:1.3rem;bottom:6.2rem;z-index:6;display:flex;align-items:center;gap:.8rem;padding:.5rem 1rem;border-radius:16px;
+  background:var(--ground);color:var(--lightning);border:3px solid var(--lightning);box-shadow:0 8px 0 rgba(0,0,0,.35),0 0 30px rgba(245,192,46,.35);
+  font-size:2.1rem;font-weight:700;font-variant-numeric:tabular-nums;
+}
+#timer::before{width:.6em;height:.85em;background:var(--lightning)}
+#timer[hidden]{display:none}
+#timer.done{background:var(--blood);color:var(--onfill);border-color:var(--onfill)}
+#timer.done::before{background:var(--onfill)}
+#timer button{font-size:1rem;min-height:2.4rem;padding:.15rem .8rem;border:2px solid currentColor;border-radius:10px;background:transparent;color:inherit}
+
+/* =========================================================
+   REVISE MODE (home study)
+   ========================================================= */
+.pane.wide.revise{
+  background:var(--panel);border:2px solid var(--line2);border-radius:16px;padding:1.2rem 1.7rem 2rem;
+  box-shadow:0 5px 0 var(--line2),0 26px 40px -26px rgba(8,10,25,.5);animation:rise .35s ease-out both;
+}
+.revise h2{margin:0;font-size:2rem;font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:850}
+.revise .intro{margin:.3rem 0 .7rem;color:var(--muted);font-size:1.15rem}
+.revise .head::after{display:none}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin:.7rem 0 1.1rem}
+.tab{min-height:2.9rem;padding:.3rem 1.2rem;background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2)}
+.tab:hover{transform:translateY(-1px);border-color:var(--accent)}
+.tab:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.tab.on{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning);font-weight:700;box-shadow:0 4px 0 rgba(16,21,29,.4)}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(22rem,1fr));gap:1.1rem;margin-top:.9rem;align-items:start}
+.qcard{
+  position:relative;padding:1rem 1.1rem 1rem;cursor:pointer;background:var(--panel2);border:2px solid var(--line2);border-top:8px solid var(--accent);border-radius:16px;box-shadow:0 4px 0 var(--line2);
+}
+.qcard::after{
+  content:"";position:absolute;right:.9rem;top:.7rem;width:1rem;height:1.4rem;background:var(--lightning);opacity:.9;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+.qcard:hover{transform:translateY(-3px);border-color:var(--accent)}
+.qcard:active{transform:translateY(1px)}
+.qcard .qt{font-family:Literata,Georgia,serif;font-style:italic;font-size:1.25rem;line-height:1.45;margin:0 1.4rem .4rem 0}
+.qcard .qr{color:var(--muted);font-size:.9rem;margin:0}
+.qcard .qb{display:none;margin-top:.8rem;padding-top:.7rem;border-top:2px dotted var(--line2)}
+.qcard .qb p{margin:.25rem 0 .55rem;font-size:1.05rem}
+.qcard.open{border-color:var(--ok);border-top-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.qcard.open .qb{display:block;animation:rise .25s ease-out both}
+.qcard .tagrow{margin-top:.5rem}
+.qz{max-width:46rem}
+.qz .qn{color:var(--muted)}
+.qz h3{font-size:1.55rem;margin:.35rem 0 .7rem}
+.qz .why{margin-top:.7rem;font-size:1.1rem}
+.score{font-family:"Grenze Gotisch",Literata,Georgia,serif;font-size:3.4rem;font-weight:850;line-height:1;color:var(--gold)}
+.gapcard{max-width:54rem;margin:1rem 0;padding:.9rem 1.2rem 1rem;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2)}
+.gapcard h3{margin:0 0 .35rem;font-size:1.2rem}
+.gapcard .cloze{font-size:1.35rem;line-height:2.15}
+.gapcard .stretchsc{font-size:1.1rem}
+
+/* =========================================================
+   RESPONSIVE + ACCESSIBILITY
+   ========================================================= */
+@media (max-width:1500px){
+  .brand b{font-size:2.2rem}
+  .top{gap:.9rem}
+  .seg{padding:.3rem .8rem;min-height:3rem}
+  .seg small{max-width:9rem;font-size:.75rem}
+  .tools{gap:.4rem}
+  .tools>button{padding:.3rem .7rem;min-height:2.6rem}
+  .chip{font-size:.85rem;padding:.2rem .65rem;min-height:2.2rem}
+  .fl{font-size:.9rem}
+}
+@media (max-height:820px){
+  .top{padding-top:.45rem;padding-bottom:.9rem}
+  .brand b{font-size:2rem}
+  .filters{padding-top:.5rem}
+  .stage{padding-top:.8rem;padding-bottom:.9rem}
+  .nav{padding-top:.95rem;padding-bottom:.55rem}
+  .btn{min-height:2.9rem}
+  .head h2{font-size:1.55rem}
+}
+@media (max-width:900px){
+  #hours{width:100%}
+  .seg{flex:1 1 0;min-width:0;padding:.3rem .6rem}
+  .seg small{max-width:100%}
+  .tools{margin-left:0;width:100%}
+  .tools>button{flex:1 1 auto;padding:.3rem .4rem}
+  .top{gap:.8rem;padding-bottom:1.1rem}
+  .brand b{font-size:2.2rem}
+  .top::before{opacity:.6}
+  .stage{grid-template-columns:1fr;overflow:auto;gap:1rem;padding:.9rem}
+  .pane{overflow:visible}
+  .pane.script:has(.ln){background:var(--panel)}
+  .ln .tx{font-size:1.35rem}
+  .cloze{font-size:1.3rem}
+  .qgrid{grid-template-columns:1fr}
+  .pane.wide.revise{padding:1rem}
+  #timer{bottom:1rem}
+  .nav{gap:.6rem;padding-left:.8rem;padding-right:.8rem}
+  .btn{padding:.4rem .9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+@media (forced-colors:active){
+  .ann{text-decoration-color:Highlight}
+  .gap,.chip,.opt,.btn,.pill{border-color:ButtonText}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand"><b>Macbeth</b><span>Act 1</span></div>
+    <nav id="hours" aria-label="Lessons and revision"></nav>
+    <div class="tools">
+      <button id="tbtn" aria-haspopup="true">Timer</button>
+      <button id="fsm" aria-label="Smaller text">A−</button>
+      <button id="fsp" aria-label="Larger text">A+</button>
+      <button id="theme">Night mode</button>
+      <button id="full">Full screen</button>
+      <div id="tmenu" hidden>
+        <button data-sec="30">30 seconds</button>
+        <button data-sec="60">1 minute</button>
+        <button data-sec="120">2 minutes</button>
+        <button data-sec="300">5 minutes</button>
+        <button data-sec="600">10 minutes</button>
+      </div>
+    </div>
+  </header>
+  <div id="filters" class="filters" hidden></div>
+  <main id="stage" class="stage"></main>
+  <footer id="nav" class="nav"></footer>
+</div>
+<div id="timer" hidden role="timer" aria-live="off"><span id="tt">0:00</span><button data-act="tstop">Stop</button></div>
+<noscript>This teaching tool needs JavaScript.</noscript>
+
+<script>
+const DATA = {"TAGS":{"ambition":"Ambition","banquo":"Banquo & contrast","fate":"Fate & the supernatural","language":"Language & technique","appearance":"Appearance vs reality","context":"Context","ahead":"Look ahead","key13":"★ Scene 1.3 evidence"},"hours":[{"title":"Lesson 1","subtitle":"Scenes 1.1, 1.2 and the start of 1.3","steps":[{"type":"aims","key":"h1-aims","short":"Aims","mins":5,"title":"Today’s lesson","doNow":{"title":"Do now: best guesses welcome","qa":[{"q":"Macbeth is about a soldier who becomes king. What could make an ordinary person do something terrible to get what they want?","a":"Ambition, jealousy, fear, or pressure from someone else. Keep your ideas: we will test them on Macbeth."},{"q":"What does the word ‘ambition’ mean? Is it always a good thing?","a":"A strong wish to achieve something, such as success or power. It can be good (working hard) or bad (if you hurt others to get it)."},{"q":"Which is stronger: fate (things are meant to happen) or choice (we decide what happens)?","a":"There is no right answer. Macbeth keeps asking this question."}]}},{"type":"context","key":"h1-ctx","short":"Before","mins":4,"title":"Before we begin","lead":"Talk first, then tap a card to check your idea.","blocks":[{"h":"When and for whom?","t":"Written around 1606 for King James I of England, who was also King James VI of Scotland. Shakespeare set the play in Scotland, James’s home country.","prompt":"Macbeth is about 400 years old. Who do you think it was written for?"},{"h":"Why witches?","t":"James was fascinated by witchcraft and had written a book about it (Daemonologie, 1597). Many people at the time believed witches were real and dangerous.","prompt":"Why might a king be afraid of witches?"},{"h":"Why does treason matter?","t":"In 1605 the Gunpowder Plot tried to blow up Parliament and kill James. People also believed kings were chosen by God, so killing a king was a crime against God as well as the country.","prompt":"Why might treason (plotting against the king) be seen as the worst crime of all?"},{"h":"What kind of play?","t":"A tragedy: a great person falls because of their own choices. Watch Macbeth closely from the very start, because the man we meet now is the man we will compare later.","prompt":"What does ‘tragedy’ mean? Who usually falls in a tragedy?"}],"side":{"title":"Four ideas to track","items":[{"h":"Ambition","t":"What does Macbeth want, and how does it change him?"},{"h":"Fair and foul","t":"Appearances that hide the truth."},{"h":"Fate and choice","t":"Are events destined, or does Macbeth choose?"},{"h":"Loyalty and betrayal","t":"Who can be trusted?"}]}},{"type":"extract","key":"e1","short":"1.1 Witches","mins":8,"label":"Extract 1","title":"Act 1, Scene 1: the witches","sub":"The whole scene","setup":"Three witches open the play. Listen to the rhythm of their speech, and look for words that sound like opposites.","task":"Underline two words or phrases that make the witches sound strange or unnatural.","lines":[{"k":"st","t":"Thunder and Lightning. Enter three Witches.","key":"s0"},{"k":"sp","t":"First Witch"},{"k":"ln","n":1,"t":"When shall we three meet again?"},{"k":"ln","n":2,"t":"In thunder, lightning, or in rain?"},{"k":"sp","t":"Second Witch"},{"k":"ln","n":3,"t":"When the hurly-burly’s done,"},{"k":"ln","n":4,"t":"When the battle’s lost and won."},{"k":"sp","t":"Third Witch"},{"k":"ln","n":5,"t":"That will be ere the set of sun."},{"k":"sp","t":"First Witch"},{"k":"ln","n":6,"t":"Where the place?"},{"k":"sp","t":"Second Witch"},{"k":"ln","n":7,"t":"Upon the heath."},{"k":"sp","t":"Third Witch"},{"k":"ln","n":8,"t":"There to meet with Macbeth."},{"k":"sp","t":"First Witch"},{"k":"ln","n":9,"t":"I come, Graymalkin."},{"k":"sp","t":"Second Witch"},{"k":"ln","n":10,"t":"Paddock calls."},{"k":"sp","t":"Third Witch"},{"k":"ln","n":11,"t":"Anon."},{"k":"sp","t":"All"},{"k":"ln","n":12,"t":"Fair is foul, and foul is fair;"},{"k":"ln","n":13,"t":"Hover through the fog and filthy air."},{"k":"st","t":"They exit.","key":"s1"}],"notes":[{"id":"n1-1","stage":"s0","phrase":"Thunder and Lightning","title":"A storm to open the play","meaning":"Before anyone speaks, we get thunder and lightning. The weather matches the mood: something is wrong.","effect":"Nature reflecting the mood is called pathetic fallacy. Shakespeare’s audience believed witches could raise storms, so this signals that the supernatural is at work.","ask":"What mood does a storm create before a word is spoken?","tags":["language","context"]},{"id":"n1-2","at":1,"phrase":"When shall we three meet again?","title":"The witches open the play","meaning":"The play begins with three witches arranging their next meeting, not with a king or a hero.","effect":"We learn at once that supernatural forces are involved. King James, watching the play, took witches very seriously.","ask":"How is this different from how you would expect a play about a soldier to start?","tags":["fate","context"]},{"id":"n1-3","at":3,"phrase":"hurly-burly","title":"Word to know: hurly-burly","meaning":"‘Hurly-burly’ means noisy chaos or uproar. Here it means the battle.","effect":"The witches know exactly when the battle will end. They seem to know things ordinary people cannot.","ask":"What does this suggest about their powers?","tags":["language","fate"]},{"id":"n1-4","at":4,"phrase":"the battle’s lost and won","title":"Paradox","meaning":"A battle can’t be both lost and won, unless you think about the two sides: one side loses and one wins.","effect":"The witches speak in contradictions. This hints that Macbeth may win the battle but lose something bigger.","ask":"Who might ‘lose’ by winning?","tags":["language","ambition","ahead"]},{"id":"n1-5","at":8,"phrase":"There to meet with Macbeth.","title":"Macbeth is named","meaning":"We hear Macbeth’s name before he appears. The witches are already waiting for him.","effect":"It makes Macbeth feel like a target, or a chosen one. Is he drawn in, or does he walk in willingly?","ask":"Do the witches choose Macbeth, or does Macbeth choose them?","tags":["fate","ambition"]},{"id":"n1-6","at":9,"phrase":"Graymalkin","title":"Familiars","meaning":"In folklore, witches had animal helpers called familiars. Graymalkin is a grey cat and Paddock (next line) is a toad. They are calling the witches away.","effect":"This roots the witches in real superstitions that the audience would have recognised.","tags":["context"]},{"id":"n1-7","at":12,"phrase":"Fair is foul, and foul is fair;","title":"Paradox: the play’s big idea","meaning":"Good looks bad and bad looks good. Right and wrong swap places.","effect":"Appearances can’t be trusted. Macbeth’s first words in the play will echo this, linking him to the witches before they even meet.","ask":"Where might something ‘fair’ hide something ‘foul’ later in the play?","tags":["language","appearance","ahead"]},{"id":"n1-8","at":13,"phrase":"fog and filthy air","title":"A murky setting","meaning":"Fog hides things and makes it hard to see clearly. ‘Filthy air’ suggests corruption.","effect":"The setting matches the theme: in this play nothing is clear, and the line between right and wrong gets blurred.","tags":["language","appearance"]}],"scene":"1.1","thinkSecs":30,"think":"With a partner (30 seconds): which two words make the witches sound strange? Decide before we look at the notes.","taskSupport":"Underline the two lines that sound most like a spell or chant. Write one word for how they make you feel.","taskStretch":"Choose one line and explain what makes it sound unnatural. Use a technique word (for example paradox, rhyme or contrast).","gloss":[["hurly-burly","noisy chaos"],["heath","wild, open land"],["Graymalkin","a grey cat, a witch’s helper"],["Paddock","a toad, another helper"],["Anon","soon"]]},{"type":"link","key":"l1","short":"What next","mins":3,"title":"What happens next","text":"Scene 1 ends with the witches planning to meet {{Macbeth}} on the heath. Their chant, ‘Fair is foul, and foul is {{fair}}’, warns us that things may not be what they {{seem}}. In Scene 2 we move to a military camp, where King {{Duncan}} meets a wounded {{Captain}} fresh from the battlefield. The Captain describes how Macbeth fought so {{fiercely}} that he cut the rebel leader open. Then he fixed his {{head}} on the castle walls. Macbeth is presented as a loyal and {{brave}} soldier.","track":"Tracker: nothing to add yet. Remember ‘fair is foul’ because we will hear it again.","ext":"Why might Shakespeare show us Macbeth’s bravery before we hear him speak?"},{"type":"extract","key":"e2","short":"1.2 Captain","mins":8,"label":"Extract 2","title":"Act 1, Scene 2: the Captain’s report","sub":"An extract","setup":"King Duncan has been told about the battle by a wounded Captain. Listen to how Macbeth is described. This is our ‘before’ picture of him.","task":"Circle two words or phrases the Captain uses to describe Macbeth. What impression do they give?","lines":[{"k":"sp","t":"Captain"},{"k":"ln","n":18,"t":"For brave Macbeth (well he deserves that name),"},{"k":"ln","n":19,"t":"Disdaining Fortune, with his brandished steel,"},{"k":"ln","n":20,"t":"Which smoked with bloody execution,"},{"k":"ln","n":21,"t":"Like Valor’s minion, carved out his passage"},{"k":"ln","n":22,"t":"Till he faced the slave;"},{"k":"ln","n":23,"t":"Which ne’er shook hands, nor bade farewell to him,"},{"k":"ln","n":24,"t":"Till he unseamed him from the nave to th’ chops,"},{"k":"ln","n":25,"t":"And fixed his head upon our battlements."},{"k":"sp","t":"Duncan"},{"k":"ln","n":26,"t":"O valiant cousin, worthy gentleman!"},{"k":"gap","t":"[…Ross arrives from Fife: the Norwegian king, helped by the traitor Thane of Cawdor, has been beaten…]"},{"k":"sp","t":"Duncan"},{"k":"ln","n":73,"t":"No more that Thane of Cawdor shall deceive"},{"k":"ln","n":74,"t":"Our bosom interest. Go, pronounce his present"},{"k":"ln","n":75,"t":"death,"},{"k":"ln","n":76,"t":"And with his former title greet Macbeth."},{"k":"sp","t":"Ross"},{"k":"ln","n":77,"t":"I’ll see it done."},{"k":"sp","t":"Duncan"},{"k":"ln","n":78,"t":"What he hath lost, noble Macbeth hath won."},{"k":"st","t":"They exit.","key":"s1"}],"notes":[{"id":"n2-1","at":18,"phrase":"brave Macbeth (well he deserves that name)","title":"First impressions","meaning":"Macbeth is introduced through someone else’s praise. He is so brave that he deserves the word ‘brave’ as his name.","effect":"We meet him as a hero before we hear him speak. This is the ‘before’ picture to compare with the Macbeth we see later.","ask":"Which qualities does the Captain admire? Add them to your tracker.","tags":["ambition"],"revise":true},{"id":"n2-2","at":19,"phrase":"Disdaining Fortune","title":"Ignoring fate","meaning":"‘Disdaining’ means looking down on. ‘Fortune’ means luck or fate. Macbeth ignores luck and relies on his own sword.","effect":"Later Macbeth will put his faith in fate and the witches’ words (‘If chance will have me king…’ in 1.3). Watch how this changes.","tags":["fate","ambition","ahead"],"revise":true},{"id":"n2-3","at":20,"phrase":"smoked with bloody execution","title":"Violent imagery","meaning":"His sword was steaming with the blood of the men he killed.","effect":"In battle this violence is heroic. The play will keep asking when killing stops being brave and becomes murder.","ask":"Is this description admiring or horrifying? Could it be both?","tags":["language","ambition"]},{"id":"n2-4","at":21,"phrase":"Valor’s minion","title":"Personification","meaning":"‘Minion’ means favourite. Valor (bravery) is treated like a person, and Macbeth is its favourite.","effect":"Macbeth sounds almost god-like. The higher he is raised, the further he has to fall.","tags":["language"]},{"id":"n2-5","at":24,"phrase":"unseamed him from the nave to th’ chops","title":"Shocking violence","meaning":"He sliced the rebel open from the navel to the jaw.","effect":"Duncan loves hearing this. Macbeth’s violence is used for the king here. Later it will be used against him.","ask":"‘Unseamed’ makes a body sound like a piece of clothing. What effect does that have?","tags":["language","ambition"]},{"id":"n2-6","at":25,"phrase":"fixed his head upon our battlements","title":"A head on the wall","meaning":"Traitors’ heads were displayed on walls as a warning to others.","effect":"Remember this image: at the very end of the play it is Macbeth’s own head that is carried in (5.8). We will come back to this pattern much later.","tags":["ahead","ambition"]},{"id":"n2-7","at":26,"phrase":"O valiant cousin, worthy gentleman!","title":"Duncan’s trust","meaning":"Duncan calls Macbeth ‘cousin’ (a close relative) and ‘worthy’.","effect":"Duncan is warm and generous. The more he trusts and loves Macbeth, the worse Macbeth’s later betrayal will be.","ask":"How does Shakespeare want us to feel about Duncan?","tags":["ambition","ahead"]},{"id":"n2-8","from":73,"to":74,"title":"A trusted man betrays the king","meaning":"The old Thane of Cawdor betrayed Duncan. ‘Our bosom interest’ means the king’s closest, most private trust.","effect":"Duncan was fooled by a man he trusted. This is another case of ‘fair is foul’: a loyal face hiding a traitor. It is about to happen again.","ask":"Who else might look loyal but not be?","tags":["appearance","ahead"]},{"id":"n2-9","at":76,"phrase":"And with his former title greet Macbeth.","title":"The reward","meaning":"Duncan gives Macbeth the traitor’s title, Thane of Cawdor, as a reward.","effect":"Macbeth doesn’t know yet. So when the witches call him Thane of Cawdor in 1.3, the prophecy is already true without his knowing, which makes them seem all-powerful.","tags":["fate"]},{"id":"n2-10","at":78,"phrase":"What he hath lost, noble Macbeth hath won.","title":"An echo of the witches","meaning":"What Cawdor lost, Macbeth gained.","effect":"‘Lost’ and ‘won’ echo the witches’ ‘lost and won’ in 1.1. Macbeth’s success comes from someone else’s downfall: a first hint that winning has a cost.","ask":"Where else have we heard ‘lost and won’?","tags":["language","fate","ambition"]}],"scene":"1.2","thinkSecs":30,"think":"With a partner (30 seconds): which words tell us Macbeth is brave? Which words might worry us?","taskSupport":"Circle two words that show Macbeth is a good soldier. Finish: ‘The Captain shows Macbeth is … because …’","taskStretch":"Choose one violent phrase. Explain how it can be read as both admiring and worrying.","gloss":[["Disdaining","looking down on"],["Fortune","luck or fate"],["minion","a favourite"],["nave","navel (belly button)"],["chops","jaws"],["bosom interest","closest trust"]]},{"type":"link","key":"l2","short":"What next","mins":3,"title":"What happens next","text":"Ross arrives and reports that the Thane of {{Cawdor}} has betrayed Duncan by helping the Norwegian army. Duncan orders his {{execution}} and gives the title to Macbeth: ‘What he hath lost, noble Macbeth hath {{won}}.’ Macbeth does not know yet that he has been rewarded. In Scene 3 the witches meet again and boast about the {{storms}} they can cause. One plans revenge on a sailor’s wife who refused to share her {{chestnuts}}. When they hear a {{drum}}, they know Macbeth is near and finish their {{charm}}.","track":"Tracker: start Macbeth’s ambition grid with ‘brave Macbeth’ and ‘Disdaining Fortune’ (1.2). This is your ‘before’ picture.","hinge":{"q":"In 1.2 Duncan gives Macbeth the title Thane of Cawdor. Why?","opts":["Because Macbeth asked for it.","Because the old Thane of Cawdor betrayed Duncan.","Because the witches told Duncan to.","Because Macbeth is Duncan’s son."],"correct":1,"why":"The old Thane of Cawdor helped the Norwegian army, so Duncan rewards Macbeth’s loyalty with the traitor’s title. The witches have not met Macbeth yet."},"ext":"Duncan’s ‘lost and won’ echoes the witches. What might Shakespeare be suggesting?"},{"type":"extract","key":"e3","short":"1.3 Meeting","mins":15,"label":"Extract 3","title":"Act 1, Scene 3: the meeting on the heath","sub":"An extract","setup":"Macbeth and Banquo, walking home from the battle, meet the witches. Compare how each man reacts.","task":"Star one line where Macbeth and Banquo react differently to the witches. Write a short note in the margin.","lines":[{"k":"sp","t":"Macbeth"},{"k":"ln","n":39,"t":"So foul and fair a day I have not seen."},{"k":"sp","t":"Banquo"},{"k":"ln","n":40,"t":"How far is ’t called to Forres?—What are these,"},{"k":"ln","n":41,"t":"So withered, and so wild in their attire,"},{"k":"ln","n":42,"t":"That look not like th’ inhabitants o’ th’ Earth"},{"k":"ln","n":43,"t":"And yet are on ’t?—Live you? Or are you aught"},{"k":"ln","n":44,"t":"That man may question? You seem to understand"},{"k":"ln","n":45,"t":"me"},{"k":"ln","n":46,"t":"By each at once her choppy finger laying"},{"k":"ln","n":47,"t":"Upon her skinny lips. You should be women,"},{"k":"ln","n":48,"t":"And yet your beards forbid me to interpret"},{"k":"ln","n":49,"t":"That you are so."},{"k":"sp","t":"Macbeth"},{"k":"ln","n":50,"t":"Speak if you can. What are you?"},{"k":"sp","t":"First Witch"},{"k":"ln","n":51,"t":"All hail, Macbeth! Hail to thee, Thane of Glamis!"},{"k":"sp","t":"Second Witch"},{"k":"ln","n":52,"t":"All hail, Macbeth! Hail to thee, Thane of Cawdor!"},{"k":"sp","t":"Third Witch"},{"k":"ln","n":53,"t":"All hail, Macbeth, that shalt be king hereafter!"},{"k":"sp","t":"Banquo"},{"k":"ln","n":54,"t":"Good sir, why do you start and seem to fear"},{"k":"ln","n":55,"t":"Things that do sound so fair?—I’ th’ name of truth,"},{"k":"ln","n":56,"t":"Are you fantastical, or that indeed"},{"k":"ln","n":57,"t":"Which outwardly you show? My noble partner"},{"k":"ln","n":58,"t":"You greet with present grace and great prediction"},{"k":"ln","n":59,"t":"Of noble having and of royal hope,"},{"k":"ln","n":60,"t":"That he seems rapt withal. To me you speak not."},{"k":"ln","n":61,"t":"If you can look into the seeds of time"},{"k":"ln","n":62,"t":"And say which grain will grow and which will not,"},{"k":"ln","n":63,"t":"Speak, then, to me, who neither beg nor fear"},{"k":"ln","n":64,"t":"Your favors nor your hate."},{"k":"sp","t":"First Witch"},{"k":"ln","n":65,"t":"Hail!"},{"k":"sp","t":"Second Witch"},{"k":"ln","n":66,"t":"Hail!"},{"k":"sp","t":"Third Witch"},{"k":"ln","n":67,"t":"Hail!"},{"k":"sp","t":"First Witch"},{"k":"ln","n":68,"t":"Lesser than Macbeth and greater."},{"k":"sp","t":"Second Witch"},{"k":"ln","n":69,"t":"Not so happy, yet much happier."},{"k":"sp","t":"Third Witch"},{"k":"ln","n":70,"t":"Thou shalt get kings, though thou be none."},{"k":"ln","n":71,"t":"So all hail, Macbeth and Banquo!"},{"k":"sp","t":"First Witch"},{"k":"ln","n":72,"t":"Banquo and Macbeth, all hail!"},{"k":"sp","t":"Macbeth"},{"k":"ln","n":73,"t":"Stay, you imperfect speakers. Tell me more."},{"k":"ln","n":74,"t":"By Sinel’s death I know I am Thane of Glamis."},{"k":"ln","n":75,"t":"But how of Cawdor? The Thane of Cawdor lives"},{"k":"ln","n":76,"t":"A prosperous gentleman, and to be king"},{"k":"ln","n":77,"t":"Stands not within the prospect of belief,"},{"k":"ln","n":78,"t":"No more than to be Cawdor. Say from whence"},{"k":"ln","n":79,"t":"You owe this strange intelligence or why"},{"k":"ln","n":80,"t":"Upon this blasted heath you stop our way"},{"k":"ln","n":81,"t":"With such prophetic greeting. Speak, I charge you."},{"k":"st","t":"Witches vanish.","key":"s81"},{"k":"sp","t":"Banquo"},{"k":"ln","n":82,"t":"The earth hath bubbles, as the water has,"},{"k":"ln","n":83,"t":"And these are of them. Whither are they vanished?"},{"k":"sp","t":"Macbeth"},{"k":"ln","n":84,"t":"Into the air, and what seemed corporal melted,"},{"k":"ln","n":85,"t":"As breath into the wind. Would they had stayed!"},{"k":"sp","t":"Banquo"},{"k":"ln","n":86,"t":"Were such things here as we do speak about?"},{"k":"ln","n":87,"t":"Or have we eaten on the insane root"},{"k":"ln","n":88,"t":"That takes the reason prisoner?"},{"k":"sp","t":"Macbeth"},{"k":"ln","n":89,"t":"Your children shall be kings."},{"k":"sp","t":"Banquo"},{"k":"ln","n":90,"t":"You shall be king."},{"k":"sp","t":"Macbeth"},{"k":"ln","n":91,"t":"And Thane of Cawdor too. Went it not so?"},{"k":"sp","t":"Banquo"},{"k":"ln","n":92,"t":"To th’ selfsame tune and words.—Who’s here?"},{"k":"st","t":"Enter Ross and Angus.","key":"s92"}],"notes":[{"id":"n3-1","at":39,"phrase":"So foul and fair","title":"Macbeth echoes the witches","meaning":"The day is ‘foul’ (stormy weather) but also ‘fair’ (a great victory).","effect":"These are Macbeth’s very first words in the play, and they copy the witches’ ‘fair is foul’ pattern before he has heard them speak. It suggests he already belongs in their world of confusion.","ask":"Why might Shakespeare give Macbeth these words as his first line?","tags":["language","fate","appearance","key13"],"support":"Macbeth’s first line has two opposite words: ___ and ___. This links him to the witches because ___.","stretch":"Is Macbeth already ‘in their world’, or just describing the weather? Argue both sides.","revise":true},{"id":"n3-2","from":41,"to":42,"title":"Banquo studies the witches","meaning":"‘Withered’ means shrivelled. Banquo says they don’t look as if they belong on Earth, yet they are standing on it.","effect":"Banquo notices details and asks careful questions. Compare this with how Macbeth reacts.","tags":["banquo","appearance"]},{"id":"n3-3","at":48,"phrase":"your beards forbid me to interpret","title":"Not what they seem","meaning":"They look like women but have beards, so Banquo can’t work out what they are.","effect":"Another example of appearance not matching reality. It also makes the witches unsettling and unnatural.","tags":["appearance","language"]},{"id":"n3-4","from":51,"to":53,"title":"Three prophecies","meaning":"Three greetings, three titles: Thane of Glamis (what he already is), Thane of Cawdor (what he doesn’t know he is), and king hereafter (in the future).","effect":"The first two are true. The third is the dangerous one. Notice the pattern of three, which is typical of spells.","ask":"Which prophecy might be the most tempting, and why?","tags":["fate","ambition","key13"],"support":"The three greetings are ___, ___ and ___. The most dangerous is ___ because ___.","stretch":"Why might Shakespeare give three greetings rather than one? What effect does the build-up have?"},{"id":"n3-5","from":54,"to":55,"title":"Banquo notices Macbeth’s fear","meaning":"Banquo sees Macbeth ‘start’ (jump in fear) even though the news sounds good (‘fair’).","effect":"Why would good news frighten a loyal soldier? It suggests Macbeth already has a dark thought in his mind. Banquo spots it, and so does the audience.","ask":"What might Macbeth be afraid of?","tags":["ambition","banquo","key13"],"support":"Banquo notices that Macbeth ___ even though the news sounds ___. This suggests Macbeth is thinking about ___.","stretch":"Why does Banquo’s question make the audience suspect Macbeth before he says anything?","revise":true},{"id":"n3-6","at":56,"phrase":"Are you fantastical","title":"Banquo questions the witches","meaning":"‘Fantastical’ means imaginary. Banquo asks: are you real, or only in our imagination?","effect":"Banquo stays sceptical and wants proof. He asks whether they are what they seem, whereas Macbeth only asks them to say more.","tags":["banquo","appearance","key13"],"support":"Banquo asks if the witches are real. This shows he is ___ (cautious or trusting) because ___.","stretch":"‘Fantastical’ and ‘fair is foul’ both question what is real. How do they connect?"},{"id":"n3-7","from":61,"to":64,"title":"Banquo is not afraid","meaning":"He uses a metaphor: the future is like seeds, and the witches can tell which will grow. He says he neither begs for their favour nor fears their hatred.","effect":"Banquo stays independent and calm. Macbeth is fascinated and shaken. Great evidence for your comparison.","ask":"Which of them seems more in control?","tags":["banquo","language","key13"],"support":"Banquo says he does not ___ or ___ the witches. This shows he is ___.","stretch":"The seeds-and-grain metaphor imagines the future as something that grows. What does this suggest about fate?","revise":true},{"id":"n3-8","from":68,"to":69,"title":"More paradoxes","meaning":"Banquo will be lesser than Macbeth (never king) but greater (his family will be kings). He is less fortunate, but also happier.","effect":"The witches keep speaking in riddles, like ‘fair is foul’ and ‘lost and won’. Riddles can mislead: they tell the truth in a confusing way.","tags":["language","banquo","fate"]},{"id":"n3-9","at":70,"phrase":"Thou shalt get kings, though thou be none.","title":"Banquo’s prophecy","meaning":"‘Get’ means father. You will father kings even though you won’t be king yourself.","effect":"Banquo will never be king, but his descendants will. This will trouble Macbeth later. King James claimed to be descended from Banquo, so Shakespeare was flattering the king.","tags":["banquo","fate","context","key13"],"support":"The witches tell Banquo his ___ will be kings. This could make Macbeth feel ___.","stretch":"Shakespeare flatters King James through Banquo. Does knowing that change how we see Banquo?","revise":true},{"id":"n3-10","at":73,"phrase":"Stay, you imperfect speakers. Tell me more.","title":"Macbeth wants more","meaning":"‘Stay’ means stop. He calls them ‘imperfect speakers’ because they have given him only half the story.","effect":"Macbeth gives orders and is hungry for more. Banquo asks whether they can be trusted, but Macbeth only asks for more. This is one of the first signs of his ambition.","ask":"What does Macbeth want? What does Banquo want?","tags":["ambition","banquo","key13"],"support":"Macbeth says ‘Tell me more’. This shows he is ___ because ___.","stretch":"‘Imperfect speakers’: is Macbeth criticising the witches, or revealing his own greed?","revise":true},{"id":"n3-11","from":75,"to":78,"title":"Macbeth argues it away","meaning":"Cawdor is alive and doing well. Being king is even harder to believe than being Cawdor.","effect":"Macbeth says it is impossible, but he keeps asking. He is not planning anything yet, but the idea has caught him.","tags":["ambition"]},{"id":"n3-12","stage":"s81","phrase":"Witches vanish.","title":"They disappear","meaning":"The witches vanish, which is proof that they are supernatural.","effect":"Because they leave no trace, the men can doubt whether it really happened. Banquo doubts it, while Macbeth wishes they had stayed. Their reactions split here.","tags":["fate"]},{"id":"n3-13","from":82,"to":83,"title":"Banquo explains it away","meaning":"Banquo says the earth has bubbles, like water: they appear and pop. The witches were like bubbles, here and gone.","effect":"He looks for a natural explanation. Banquo prefers logic to magic.","tags":["banquo"]},{"id":"n3-14","from":86,"to":88,"title":"Banquo doubts his senses","meaning":"The ‘insane root’ is a plant that could make people see things or lose their reason. Banquo asks: did we eat something that ‘takes the reason prisoner’?","effect":"Banquo’s first thought is that they were tricked, not chosen. Macbeth’s first thought is ‘I wish they had stayed’. Sceptic against believer.","ask":"Which reaction is wiser? Which is more dangerous?","tags":["banquo","key13"],"support":"Banquo’s first thought is that ___. Macbeth’s first thought is ___.","stretch":"Which reaction would a Jacobean audience find more sensible? Why?","revise":true},{"id":"n3-15","from":89,"to":90,"title":"Each remembers the other’s prophecy","meaning":"Macbeth repeats Banquo’s prediction (‘Your children shall be kings’), and Banquo repeats Macbeth’s.","effect":"Macbeth mentions Banquo’s prophecy first. Later he cannot bear the thought of Banquo’s children being kings, and has Banquo killed (Act 3).","tags":["banquo","ambition","ahead"]}],"scene":"1.3","thinkSecs":30,"think":"With a partner (30 seconds): what is different about how Macbeth and Banquo speak to the witches?","taskSupport":"Star Banquo’s questions to the witches (lines 54–64). Finish: ‘Banquo is … because …’","taskStretch":"Write two sentences comparing how Macbeth and Banquo react. Use one quotation from each man.","gloss":[["aught","anything"],["fantastical","imaginary"],["rapt","completely absorbed"],["hereafter","in the future"],["corporal","having a body"],["insane root","a plant that makes you see things"],["get (kings)","father (kings)"]]},{"type":"link","key":"l3","short":"What next","mins":3,"title":"What happens next","text":"After the prophecies, the witches {{vanish}}. Banquo is {{sceptical}}: he wonders whether they have eaten a plant that makes people see things, the ‘insane root’. Macbeth, however, wishes they had {{stayed}}, and reminds Banquo that his {{children}} will be kings. Macbeth is already {{fascinated}} by the prophecy, while Banquo tries to explain it away. Then Ross and Angus arrive with a message from the king. Macbeth has been named Thane of {{Cawdor}}, so one of the witches’ predictions has already come {{true}}.","track":"Tracker: fill in the first row of the Macbeth and Banquo table. How does each man react to the witches?","ext":"Banquo doubts the witches while Macbeth wants more. Whose reaction is more dangerous, and why?"},{"type":"plenary","key":"h1-end","short":"Exit","mins":6,"title":"Exit ticket","ticket":[{"lvl":"core","q":"What does ‘fair is foul, and foul is fair’ tell us about the play?","a":"Things are not what they seem: something that looks good can hide something bad, and the other way round."},{"lvl":"core","q":"Give one word or phrase from Act 1 Scene 2 that shows Macbeth is brave.","a":"For example ‘brave Macbeth’, ‘Disdaining Fortune’, ‘Valor’s minion’, or ‘unseamed him from the nave to th’ chops’."},{"lvl":"stretch","q":"In one or two sentences, how is Banquo’s reaction to the witches different from Macbeth’s? Use a quotation.","a":"Banquo questions them (‘Are you fantastical…?’) and says he does not beg or fear their favours, whereas Macbeth demands more (‘Stay, you imperfect speakers. Tell me more.’)."}],"next":"Next lesson: Ross and Angus bring news that changes everything. Watch how quickly Macbeth’s thoughts change."}],"aims":{"li":"To understand how Shakespeare introduces Macbeth, the witches and Banquo, and to spot how the two men react differently.","sc":["I can explain what ‘fair is foul, and foul is fair’ tells us about the play.","I can describe how Macbeth is presented before he meets the witches, using a short quotation.","I can compare how Macbeth and Banquo react to the witches, giving evidence for each."],"stretch":"I can explain how a technique, such as paradox, makes a line more powerful.","word":{"w":"paradox","m":"a statement that seems to contradict itself but still holds a truth.","eg":"‘Fair is foul, and foul is fair.’ Use the word in one sentence today."},"bridge":"","bigger":["Now: collect evidence in your tracker","Lesson 4: comprehension on Act 1 Scene 3","A paragraph on Lady Macbeth","An essay on Macbeth’s ambition and how he changes, compared with Banquo and Macduff"]}},{"title":"Lesson 2","subtitle":"The rest of Scene 1.3","steps":[{"type":"aims","key":"h2-aims","short":"Aims","mins":6,"title":"Today’s lesson","doNow":{"title":"Do now: what do you remember?","qa":[{"q":"What three greetings do the witches give Macbeth?","a":"Thane of Glamis, Thane of Cawdor, and king hereafter."},{"q":"What do they promise Banquo?","a":"His children will be kings, though he will not be king himself."},{"q":"How do Macbeth and Banquo react differently to the witches?","a":"Macbeth is startled and wants more information. Banquo questions the witches and suspects he has been tricked."}]}},{"type":"extract","key":"e4","short":"1.3 News","mins":8,"label":"Extract 4","title":"Act 1, Scene 3: the king’s message","sub":"An extract","setup":"Ross and Angus arrive with a message from the king. Watch how quickly one prediction comes true, and how each man responds.","task":"Underline Banquo’s first reaction. What does it suggest he suspects?","lines":[{"k":"sp","t":"Ross"},{"k":"ln","n":109,"t":"And for an earnest of a greater honor,"},{"k":"ln","n":110,"t":"He bade me, from him, call thee Thane of Cawdor,"},{"k":"ln","n":111,"t":"In which addition, hail, most worthy thane,"},{"k":"ln","n":112,"t":"For it is thine."},{"k":"sp","t":"Banquo"},{"k":"ln","n":113,"t":"What, can the devil speak true?"},{"k":"sp","t":"Macbeth"},{"k":"ln","n":114,"t":"The Thane of Cawdor lives. Why do you dress me"},{"k":"ln","n":115,"t":"In borrowed robes?"},{"k":"sp","t":"Angus"},{"k":"ln","n":116,"t":"Who was the Thane lives yet,"},{"k":"ln","n":117,"t":"But under heavy judgment bears that life"},{"k":"ln","n":118,"t":"Which he deserves to lose. Whether he was"},{"k":"gap","t":"[…]"},{"k":"ln","n":123,"t":"But treasons capital, confessed and proved,"},{"k":"ln","n":124,"t":"Have overthrown him."},{"k":"sp","t":"Macbeth (aside)"},{"k":"ln","n":125,"t":"Glamis and Thane of Cawdor!"},{"k":"ln","n":126,"t":"The greatest is behind. [To Ross and Angus.] Thanks"},{"k":"ln","n":127,"t":"for your pains."}],"notes":[{"id":"n4-1","at":109,"phrase":"an earnest of a greater honor","title":"A down-payment","meaning":"‘Earnest’ means a first payment, or a promise of more to come. Cawdor is only the start.","effect":"Duncan means more rewards will follow. To Macbeth, who has just been told ‘king hereafter’, ‘a greater honor’ could sound like a promise of the crown. Watch for ‘earnest’ in his next speech.","tags":["language","ambition","key13"],"support":"‘Earnest’ means ___. Macbeth may hear ‘a greater honor’ as ___.","stretch":"Ross means more rewards, but Macbeth may hear ‘the crown’. How can one phrase mean two things?"},{"id":"n4-2","at":111,"phrase":"hail, most worthy thane","title":"‘Hail’ again","meaning":"Ross uses the witches’ word ‘hail’.","effect":"The human world echoes the supernatural one, so the prophecy seems even more real.","tags":["fate","language"]},{"id":"n4-3","at":113,"phrase":"What, can the devil speak true?","title":"Banquo’s suspicion","meaning":"Banquo wonders aloud whether the devil can tell the truth.","effect":"Banquo’s first reaction to a prophecy coming true is suspicion. He guesses that evil could be at work. Macbeth’s reaction is to want more.","ask":"What does this line tell us about Banquo?","tags":["banquo","fate","key13"],"support":"Banquo suspects ___. He says this ___ (aloud or secretly), which shows ___.","stretch":"Banquo has the same information as Macbeth. Why do they draw different conclusions?","revise":true},{"id":"n4-4","from":114,"to":115,"title":"Borrowed robes","meaning":"Macbeth says the title belongs to someone else, like wearing borrowed clothes.","effect":"Clothing imagery returns again and again in the play, with titles that don’t fit. Here Macbeth objects honestly. Notice how quickly that changes.","tags":["language","ambition"]},{"id":"n4-5","at":123,"phrase":"treasons capital, confessed and proved,","title":"Treason means death","meaning":"‘Capital’ means punishable by death. Cawdor has confessed, so his punishment is certain.","effect":"Treason is the worst crime in this world. Macbeth is standing right next to a warning about it.","ask":"Why might Shakespeare remind us of the punishment for treason now?","tags":["ahead","ambition"]},{"id":"n4-6","at":125,"phrase":"Glamis and Thane of Cawdor!","title":"Two truths","meaning":"Two of the witches’ three greetings have now come true.","effect":"The first two were true, so the third suddenly seems believable. To Macbeth this is proof that the witches can predict the future.","tags":["fate","ambition"]},{"id":"n4-7","at":126,"phrase":"The greatest is behind.","title":"‘The greatest is behind’","meaning":"‘Behind’ means still to come. King is the greatest title, and it is still to come.","effect":"A few lines ago Macbeth said becoming king was beyond belief. Now he calls it the next step. This is a big shift in his thinking, so mark it in your tracker.","ask":"What has changed in his mind since line 77?","tags":["ambition","key13"],"support":"Earlier in 1.3 Macbeth says being king is ___. Now he says ‘The greatest is behind’, which means ___.","stretch":"How quickly does Macbeth’s view of becoming king change? Which words show the shift?","revise":true}],"scene":"1.3","thinkSecs":30,"think":"With a partner (30 seconds): what does Banquo think about the news? What does Macbeth think?","taskSupport":"Underline ‘What, can the devil speak true?’ Finish: ‘Banquo suspects …’","taskStretch":"Compare Banquo’s reaction with Macbeth’s ‘The greatest is behind.’ What does the contrast show?","gloss":[["earnest","a first payment, or promise of more"],["thane","a Scottish lord"],["addition","a title"],["capital (treasons)","punishable by death"],["behind","still to come"]]},{"type":"link","key":"l4","short":"What next","mins":4,"title":"What happens next","text":"Angus explains that the old Thane of Cawdor is a traitor who will be {{executed}}. Two of the witches’ predictions have now come true, so Macbeth’s mind jumps to the third: ‘The {{greatest}} is behind.’ He asks Banquo whether he hopes his {{children}} will be kings. Banquo replies with a {{warning}}. Evil forces may tell us small {{truths}} to win our trust, and then {{betray}} us when it matters most. Macbeth ignores this. He steps aside to speak his private thoughts in an {{aside}}, which the audience hears but the other characters do not.","track":"Tracker: add ‘The greatest is behind’ to the ambition grid. What has changed since 1.2?","hinge":{"q":"Banquo says ‘What, can the devil speak true?’ What is he suggesting?","opts":["That Macbeth is lying.","That the witches’ predictions might be an evil trick.","That he is jealous of Macbeth.","That he wants to be Thane of Cawdor."],"correct":1,"why":"Banquo is suspicious. If the witches can tell a truth, that might be a way of winning trust before something worse."},"ext":"Why might Banquo’s warning matter more to the audience than to Macbeth?"},{"type":"extract","key":"e5","short":"1.3 Aside","mins":25,"label":"Extract 5","title":"Act 1, Scene 3: Banquo’s warning and Macbeth’s aside","sub":"An extract","setup":"‘Aside’ means words the audience hears but the other characters don’t. Listen for how Macbeth reasons with himself, and how Banquo reacts.","task":"Highlight the moment Macbeth first imagines something terrible. What might he be picturing?","lines":[{"k":"sp","t":"Macbeth (aside to Banquo)"},{"k":"ln","n":128,"t":"Do you not hope your children"},{"k":"ln","n":129,"t":"shall be kings,"},{"k":"ln","n":130,"t":"When those that gave the Thane of Cawdor to me"},{"k":"ln","n":131,"t":"Promised no less to them?"},{"k":"sp","t":"Banquo"},{"k":"ln","n":132,"t":"That, trusted home,"},{"k":"ln","n":133,"t":"Might yet enkindle you unto the crown,"},{"k":"ln","n":134,"t":"Besides the Thane of Cawdor. But ’tis strange."},{"k":"ln","n":135,"t":"And oftentimes, to win us to our harm,"},{"k":"ln","n":136,"t":"The instruments of darkness tell us truths,"},{"k":"ln","n":137,"t":"Win us with honest trifles, to betray ’s"},{"k":"ln","n":138,"t":"In deepest consequence.—"},{"k":"ln","n":139,"t":"Cousins, a word, I pray you."},{"k":"st","t":"They step aside.","key":"s139"},{"k":"sp","t":"Macbeth (aside)"},{"k":"ln","n":140,"t":"Two truths are told"},{"k":"ln","n":141,"t":"As happy prologues to the swelling act"},{"k":"ln","n":142,"t":"Of the imperial theme.—I thank you, gentlemen."},{"k":"ln","n":143,"t":"[Aside.] This supernatural soliciting"},{"k":"ln","n":144,"t":"Cannot be ill, cannot be good. If ill,"},{"k":"ln","n":145,"t":"Why hath it given me earnest of success"},{"k":"ln","n":146,"t":"Commencing in a truth? I am Thane of Cawdor."},{"k":"ln","n":147,"t":"If good, why do I yield to that suggestion"},{"k":"ln","n":148,"t":"Whose horrid image doth unfix my hair"},{"k":"ln","n":149,"t":"And make my seated heart knock at my ribs"},{"k":"ln","n":150,"t":"Against the use of nature? Present fears"},{"k":"ln","n":151,"t":"Are less than horrible imaginings."},{"k":"ln","n":152,"t":"My thought, whose murder yet is but fantastical,"},{"k":"ln","n":153,"t":"Shakes so my single state of man"},{"k":"ln","n":154,"t":"That function is smothered in surmise,"},{"k":"ln","n":155,"t":"And nothing is but what is not."},{"k":"sp","t":"Banquo"},{"k":"ln","n":156,"t":"Look how our partner’s rapt."},{"k":"sp","t":"Macbeth (aside)"},{"k":"ln","n":157,"t":"If chance will have me king, why, chance may"},{"k":"ln","n":158,"t":"crown me"},{"k":"ln","n":159,"t":"Without my stir."},{"k":"sp","t":"Banquo"},{"k":"ln","n":160,"t":"New honors come upon him,"},{"k":"ln","n":161,"t":"Like our strange garments, cleave not to their mold"},{"k":"ln","n":162,"t":"But with the aid of use."},{"k":"sp","t":"Macbeth (aside)"},{"k":"ln","n":163,"t":"Come what come may,"},{"k":"ln","n":164,"t":"Time and the hour runs through the roughest day."}],"notes":[{"id":"n5-1","from":128,"to":131,"title":"Macbeth tests Banquo","meaning":"Macbeth asks Banquo whether he hopes his children will be kings, now that the Cawdor part has come true.","effect":"Macbeth is sounding Banquo out: is he tempted too? His mind is fixed on the prophecies.","tags":["banquo","ambition"]},{"id":"n5-2","from":132,"to":133,"title":"Banquo sees the danger","meaning":"‘Trusted home’ means fully believed. Banquo says that if Macbeth completely believes it, it might ‘enkindle’ (set on fire) his hopes of the crown.","effect":"Banquo spots the danger in Macbeth’s thinking. He is the first character to warn that the prophecy could ignite ambition.","ask":"How does the word ‘enkindle’ suggest ambition?","tags":["banquo","ambition","key13"],"support":"‘Enkindle’ means ___. Banquo warns the prophecy could ___ Macbeth’s ___.","stretch":"What does the image of fire suggest about how ambition spreads?","revise":true},{"id":"n5-3","from":135,"to":138,"title":"Banquo’s warning","meaning":"Evil forces (‘instruments of darkness’) might tell us small truths (‘honest trifles’) to win our trust, and then trap us with a disaster.","effect":"Banquo is wise: he knows evil can tell partial truths. Macbeth doesn’t listen. A perfect quote for comparing them: one warns, one is tempted.","ask":"How does Banquo’s attitude differ from Macbeth’s?","tags":["banquo","fate","key13"],"support":"Banquo warns that evil may tell ___ truths to ___ us. This matters because ___.","stretch":"‘Honest trifles’ is a paradox. How does it capture the danger Banquo describes?","revise":true},{"id":"n5-4","from":140,"to":142,"title":"A play in his mind","meaning":"Macbeth says two truths are ‘happy prologues’ (openings) to a big drama (‘swelling act’) about being king (‘the imperial theme’).","effect":"He describes his life as a play with a grand ending. He is already imagining himself as king. Note the theatre metaphor and the confidence.","tags":["ambition","language","key13"],"support":"Macbeth calls the prophecies ‘happy prologues’. A prologue is ___, so he thinks ___.","stretch":"Why might a character compare his life to a play? Who is ‘watching’?"},{"id":"n5-5","at":143,"phrase":"supernatural soliciting","title":"Word to know: soliciting","meaning":"‘Soliciting’ means urging or tempting. The prophecy is a supernatural pull.","effect":"Macbeth calls it a ‘soliciting’: a temptation from outside. He feels pushed, but the thoughts that follow are his own.","tags":["language","fate"]},{"id":"n5-6","at":144,"phrase":"Cannot be ill, cannot be good","title":"Torn in two","meaning":"It can’t be evil, and it can’t be good.","effect":"A paradox again, echoing ‘fair is foul’. Macbeth’s mind is divided between wanting to believe and being uneasy. Notice how he argues both sides.","ask":"Why is Macbeth so keen to work out whether it is good or ill?","tags":["language","appearance","key13"],"support":"Macbeth says it ‘cannot be ill, cannot be good’, so he is ___ (certain or unsure).","stretch":"Why does Macbeth need to decide whether the witches are good or evil? What does he want the answer to be?","revise":true},{"id":"n5-7","from":145,"to":146,"title":"Macbeth’s logic","meaning":"If it is evil, why did it start by giving me a real truth (Cawdor)?","effect":"He talks himself into trusting the witches. The reasoning is shaky because he wants to believe. And he uses ‘earnest’, Ross’s word, again.","tags":["ambition","key13"],"support":"Macbeth reasons: if the witches are evil, why ___? This shows he wants to ___.","stretch":"Compare Macbeth’s reasoning with Banquo’s. Whose would you trust more?"},{"id":"n5-8","from":147,"to":151,"title":"The horrid image","meaning":"If it is good, why does the thought scare him so much? His hair stands on end and his heart pounds. ‘Present fears are less than horrible imaginings’: what he imagines is worse than real danger.","effect":"The ‘horrid image’ is almost certainly killing Duncan. His body reacts before he says it. He is scared by his own mind.","ask":"What do you think the horrid image is? Which words suggest it?","tags":["ambition","language","key13"],"support":"The ‘horrid image’ makes his ___ and ___ react. This shows he is ___.","stretch":"Macbeth is frightened by something he has only imagined. What does this suggest about imagination and guilt?","revise":true},{"id":"n5-9","at":152,"phrase":"whose murder yet is but fantastical","title":"Murder enters his mind","meaning":"‘Fantastical’ means existing only in the imagination. His murder thought is only in his head.","effect":"Murder has entered Macbeth’s thoughts before he has done or said anything. Shakespeare shows how quickly ambition turns dark.","tags":["ambition","key13"],"support":"Macbeth thinks of ‘murder’ but calls it ‘fantastical’ (___). So he has not ___ yet.","stretch":"How does Shakespeare show ambition turning dark using only Macbeth’s thoughts?","revise":true},{"id":"n5-10","from":153,"to":155,"title":"Thought overpowers action","meaning":"His imagining shakes his whole self and smothers his ability to act normally. The only thing that feels real is what is not real yet.","effect":"‘Nothing is but what is not’ is another paradox, echoing ‘fair is foul’. Reality and imagination are swapping places.","tags":["language","appearance","key13"],"support":"His thoughts ‘smother’ his ability to ___. ‘Nothing is but what is not’ means ___.","stretch":"How does this paradox echo ‘fair is foul’? What connection is Shakespeare drawing?","revise":true},{"id":"n5-11","at":156,"phrase":"rapt","title":"Banquo watches","meaning":"‘Rapt’ means completely absorbed, in a trance.","effect":"Banquo notices Macbeth’s odd behaviour but gives an innocent reason. He trusts Macbeth even while he distrusts the witches.","tags":["banquo"]},{"id":"n5-12","from":157,"to":159,"title":"Leave it to chance","meaning":"If fate wants me to be king, fate can crown me without my doing anything.","effect":"Macbeth considers waiting passively. Later, Lady Macbeth will push him to act. Compare this with ‘Disdaining Fortune’ in 1.2, and notice how his attitude to chance has changed.","ask":"Is Macbeth choosing to trust fate, or avoiding a choice?","tags":["ambition","fate","key13","ahead"],"support":"Macbeth says ‘chance may crown me without my stir’, so he thinks he could ___.","stretch":"Compare ‘Disdaining Fortune’ (1.2) with ‘chance may crown me’ (1.3). What has changed?","revise":true},{"id":"n5-13","from":160,"to":162,"title":"Banquo’s innocent excuse","meaning":"New clothes don’t fit until you have worn them in, and Banquo says Macbeth’s new honours feel the same.","effect":"Clothing imagery again (‘borrowed robes’ and ‘strange garments’). Banquo makes a kind excuse for his friend, with no idea that Macbeth is thinking of murder.","tags":["banquo","language","key13"],"support":"Banquo compares Macbeth’s honours to new ___. He thinks Macbeth is behaving strangely because ___.","stretch":"Banquo gives an innocent reason. What does the audience know that Banquo does not?","revise":true},{"id":"n5-14","from":163,"to":164,"title":"Come what come may","meaning":"Whatever happens will happen. Time keeps passing, even through the worst days.","effect":"Macbeth calms himself by deciding to leave it to time. But his thoughts have already gone to murder, and he cannot un-think them. He is about to hide his real thoughts from Banquo.","tags":["ambition","fate","key13"],"support":"‘Come what come may’ shows Macbeth is trying to ___.","stretch":"Does Macbeth truly accept fate here, or is he avoiding a decision? Use evidence."}],"scene":"1.3","thinkSecs":120,"think":"With a partner (2 minutes): find the line where Macbeth first sounds frightened. Underline it, then tap to check.","taskSupport":"Highlight ‘horrid image’ and ‘murder’. Finish: ‘Macbeth is frightened because …’","taskStretch":"Choose one word from Macbeth’s aside and explain what it tells us about his thoughts.","gloss":[["enkindle","set on fire"],["trifles","small things"],["soliciting","tempting, urging"],["surmise","guessing, imagining"],["fantastical","only in the imagination"],["rapt","absorbed, in a trance"],["cleave","stick"],["mold","shape"]]},{"type":"link","key":"l5","short":"What next","mins":5,"title":"What happens next","text":"Macbeth is torn. He is thrilled by the idea of becoming king, but also {{terrified}} by the ‘horrid image’ of murder in his mind. He decides that if fate wants him to be king, it can crown him ‘without my {{stir}}’. Banquo thinks his friend is simply overwhelmed by his new {{titles}}. Snapping back to the group, Macbeth makes an {{excuse}}: his brain was busy with ‘things {{forgotten}}’, which is not the truth. He and Banquo agree to talk again ‘at more {{time}}’. Macbeth is now keeping {{secrets}} from his closest friend, which is a big step in his change.","track":"Tracker: add Macbeth’s ‘horrid image’ and Banquo’s ‘instruments of darkness’ warning to your grids.","ext":"Why is lying to Banquo a big step in Macbeth’s change?"},{"type":"plenary","key":"h2-end","short":"Exit","mins":7,"title":"Exit ticket","ticket":[{"lvl":"core","q":"What warning does Banquo give Macbeth?","a":"Evil forces may tell us small truths to win our trust, and then betray us (‘instruments of darkness’, ‘honest trifles’)."},{"lvl":"core","q":"What do you think Macbeth’s ‘horrid image’ is?","a":"Murdering King Duncan. He says ‘murder’ two lines later, and his body reacts with fear."},{"lvl":"stretch","q":"How has Macbeth’s attitude to fate changed since Act 1 Scene 2 (‘Disdaining Fortune’)?","a":"At first he trusted his own sword and ignored luck. Now he is ready to let chance work for him (‘If chance will have me king, why, chance may crown me / Without my stir’)."}],"next":"Next lesson: we practise the question types for a comprehension on Act 1 Scene 3."}],"aims":{"li":"To understand how Macbeth’s thoughts change when the first prophecy comes true, and how Banquo’s response is different.","sc":["I can explain what Banquo’s warning about the ‘instruments of darkness’ means.","I can explain what Macbeth’s ‘horrid image’ suggests about his thoughts.","I can use a short quotation to support a point about Macbeth’s ambition."],"stretch":"I can explain how Macbeth’s attitude to fate has changed since Act 1 Scene 2.","word":{"w":"aside","m":"words a character says that the audience hears but the other characters do not.","eg":"Macbeth’s private thoughts in this scene are asides. Use the word in one sentence today."},"bridge":"Last lesson: the witches met Macbeth and Banquo on the heath and made prophecies. Then they vanished, leaving the two men to argue about what they had seen.","bigger":["Now: collect evidence in your tracker","Lesson 4: comprehension on Act 1 Scene 3","A paragraph on Lady Macbeth","An essay on Macbeth’s ambition and how he changes, compared with Banquo and Macduff"]}}],"QUIZ":[{"q":"Where do the witches plan to meet Macbeth?","opts":["In a castle","Upon the heath","At the battlefield","In Duncan’s court"],"correct":1,"why":"‘Upon the heath’ (1.1)."},{"q":"What does ‘Fair is foul, and foul is fair’ suggest?","opts":["The weather is bad","Things are not what they seem","Macbeth is a fair man","The witches are fair"],"correct":1,"why":"It is a paradox: good and bad swap places, so appearances cannot be trusted."},{"q":"How does the Captain present Macbeth in 1.2?","opts":["Cowardly","Brave and loyal","Cruel to the king","Unsure of himself"],"correct":1,"why":"‘Brave Macbeth (well he deserves that name)’: this is the ‘before’ picture of Macbeth."},{"q":"Who tells Macbeth that he is now Thane of Cawdor?","opts":["The witches","Banquo","Ross and Angus","Duncan himself"],"correct":2,"why":"Ross and Angus bring the king’s message."},{"q":"What do the witches predict for Banquo?","opts":["He will be king","His children will be kings","He will die soon","He will be Thane of Cawdor"],"correct":1,"why":"‘Thou shalt get kings, though thou be none.’"},{"q":"How does Banquo react to the prophecies compared with Macbeth?","opts":["More suspicious and cautious","More excited","Exactly the same","More angry"],"correct":0,"why":"Banquo questions the witches and warns Macbeth. Macbeth wants to hear more."},{"q":"Banquo warns that ‘the instruments of darkness tell us truths’. What is he warning about?","opts":["Evil can tell small truths to trap us","Darkness is dangerous","Truth is always good","The witches lie about everything"],"correct":0,"why":"Small truths (‘honest trifles’) can win our trust before a terrible betrayal."},{"q":"What is the ‘horrid image’ that frightens Macbeth most likely to be?","opts":["Losing a battle","Murdering Duncan","Meeting the witches again","Banquo’s ghost"],"correct":1,"why":"Two lines later he says ‘murder’: the thought is only in his head, but it terrifies him."},{"q":"What does ‘rapt’ mean in ‘Look how our partner’s rapt’?","opts":["Angry","Absorbed in thought","Ill","Tired"],"correct":1,"why":"Banquo sees Macbeth lost in his own thoughts."},{"q":"Which line shows Macbeth is ready to leave the crown to chance?","opts":["‘If chance will have me king, why, chance may crown me / Without my stir.’","‘Stay, you imperfect speakers.’","‘So foul and fair a day I have not seen.’","‘What he hath lost, noble Macbeth hath won.’"],"correct":0,"why":"‘Without my stir’ means without me doing anything."},{"q":"What is an ‘aside’?","opts":["A very long speech","Words the audience hears but other characters do not","A stage direction","A song"],"correct":1,"why":"Macbeth’s private thoughts in 1.3 are asides."},{"q":"In 1.2 Duncan gives Macbeth the title Thane of Cawdor. Why?","opts":["Because Macbeth asked for it.","Because the old Thane of Cawdor betrayed Duncan.","Because the witches told Duncan to.","Because Macbeth is Duncan’s son."],"correct":1,"why":"The old Thane of Cawdor helped the Norwegian army, so Duncan rewards Macbeth’s loyalty with the traitor’s title. The witches have not met Macbeth yet."},{"q":"Banquo says ‘What, can the devil speak true?’ What is he suggesting?","opts":["That Macbeth is lying.","That the witches’ predictions might be an evil trick.","That he is jealous of Macbeth.","That he wants to be Thane of Cawdor."],"correct":1,"why":"Banquo is suspicious. If the witches can tell a truth, that might be a way of winning trust before something worse."}]};
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (s) => esc(s).replace(/\[([^\]]+)\]/g, '<i class="sd">[$1]</i>');
+const SHORT = { ambition: "Ambition", banquo: "Banquo", fate: "Fate", language: "Language", appearance: "Appearance", context: "Context", ahead: "Look ahead", key13: "★ 1.3 evidence" };
+
+/* ratings are the only thing kept on the device, and only if the browser allows it */
+const RKEY = "macbeth-act1-ratings";
+function loadRate() { try { return JSON.parse(localStorage.getItem(RKEY) || "{}"); } catch (e) { return {}; } }
+function saveRate() { try { localStorage.setItem(RKEY, JSON.stringify(S.rate)); } catch (e) { /* storage unavailable */ } }
+
+const S = { view: "lesson", h: 0, s: 0, tag: "all", sel: null, scale: 1, rev: { tab: "quotes", tag: "all", quiz: null }, rate: loadRate() };
+const cur = () => DATA.hours[S.h].steps[S.s];
+
+/* order notes by position in the text */
+DATA.hours.forEach((h) => h.steps.forEach((st) => {
+  if (st.type !== "extract") return;
+  const posOf = (n) => {
+    let i;
+    if (n.stage) i = st.lines.findIndex((l) => l.k === "st" && l.key === n.stage);
+    else { const ln = n.at !== undefined ? n.at : n.from; i = st.lines.findIndex((l) => l.k === "ln" && l.n === ln); }
+    return i * 1000 + (n.phrase && !n.stage ? Math.max(0, (st.lines[i].t || "").indexOf(n.phrase)) : 0);
+  };
+  st.notes.forEach((n) => (n._pos = posOf(n)));
+  st.notes.sort((a, b) => a._pos - b._pos);
+}));
+
+const tagOK = (n, tag) => tag === "all" || n.tags.includes(tag);
+const match = (n) => tagOK(n, S.tag);
+const visible = (st) => st.notes.filter(match);
+const byId = (st, id) => st.notes.find((n) => n.id === id);
+
+/* ---------- top bar and navigation ---------- */
+function renderTop() {
+  $("#hours").innerHTML = DATA.hours.map((h, i) =>
+    `<button class="seg${S.view === "lesson" && i === S.h ? " on" : ""}" data-h="${i}"><b>${esc(h.title)}</b><small>${esc(h.subtitle)}</small></button>`).join("") +
+    `<button class="seg${S.view === "revise" ? " on" : ""}" data-view="revise"><b>Revise</b><small>Practise at home</small></button>`;
+}
+function renderNav() {
+  const nav = $("#nav");
+  if (S.view !== "lesson") { nav.hidden = true; return; }
+  nav.hidden = false;
+  const h = DATA.hours[S.h];
+  const first = S.h === 0 && S.s === 0;
+  const last = S.h === DATA.hours.length - 1 && S.s === h.steps.length - 1;
+  const nextLabel = S.s === h.steps.length - 1 && !last ? "Next lesson ▶" : "Next ▶";
+  const prevLabel = S.s === 0 && !first ? "◀ Last lesson" : "◀ Back";
+  nav.innerHTML =
+    `<button class="btn" data-act="prev" ${first ? "disabled" : ""}>${prevLabel}</button>` +
+    `<div class="pills">` + h.steps.map((s, i) =>
+      `<button class="pill ${s.type}${i === S.s ? " on" : ""}" data-s="${i}" title="About ${s.mins} min"><span class="pn">${i + 1}</span>${esc(s.short)}</button>`).join("") + `</div>` +
+    `<button class="btn primary" data-act="next" ${last ? "disabled" : ""}>${nextLabel}</button>`;
+}
+function chipRow(notes, active) {
+  const counts = {};
+  notes.forEach((n) => n.tags.forEach((t) => (counts[t] = (counts[t] || 0) + 1)));
+  return `<span class="fl">Show notes about</span><button class="chip${active === "all" ? " on" : ""}" data-tag="all">All (${notes.length})</button>` +
+    Object.keys(DATA.TAGS).filter((t) => counts[t]).map((t) =>
+      `<button class="chip tg-${t}${active === t ? " on" : ""}" data-tag="${t}"><i class="dot"></i>${esc(SHORT[t])} (${counts[t]})</button>`).join("");
+}
+function renderFilters() {
+  const el = $("#filters");
+  if (S.view === "revise") { el.hidden = true; return; }
+  const st = cur();
+  if (st.type !== "extract") { el.hidden = true; return; }
+  el.hidden = false;
+  const has = new Set(); st.notes.forEach((n) => n.tags.forEach((t) => has.add(t)));
+  if (S.tag !== "all" && !has.has(S.tag)) S.tag = "all";
+  el.innerHTML = chipRow(st.notes, S.tag);
+}
+
+/* ---------- shared pieces ---------- */
+function qaCards(qa) {
+  return qa.map((q) => `<div class="qa ${q.lvl || ""}" role="button" tabindex="0" data-qa>${q.lvl ? `<span class="lv">${q.lvl === "core" ? "Core" : "Stretch"}</span>` : ""}<div class="qq">${esc(q.q)}</div><div class="aa">${esc(q.a)}</div></div>`).join("");
+}
+function ratingHTML(h) {
+  const A = DATA.hours[h].aims;
+  const items = [...A.sc, A.stretch];
+  return items.map((t, i) => {
+    const v = S.rate[h + ":" + i];
+    return `<div class="rate"><p>${i === A.sc.length ? "<b>Stretch:</b> " : ""}${esc(t)}</p><div class="rbtns">` +
+      ["Not yet", "Nearly", "Got it"].map((l, k) => `<button class="rb${v === k ? " on" : ""}" data-rate="${h}:${i}:${k}">${l}</button>`).join("") + `</div></div>`;
+  }).join("");
+}
+function clozeParts(text) {
+  let i = 0;
+  const html = esc(text).replace(/\{\{(.+?)\}\}/g, (m, a) => { i++; return `<span class="gap" data-gap role="button" tabindex="0"><sup>${i}</sup><span class="ans">${esc(a)}</span></span>`; });
+  const bank = [...text.matchAll(/\{\{(.+?)\}\}/g)].map((m) => m[1]).sort((a, b) => a.localeCompare(b));
+  return { html, bank };
+}
+function hingeHTML(hg) {
+  return `<div class="hinge"><div class="lab">Quick check: vote, then reveal</div><p class="hq">${esc(hg.q)}</p>` +
+    hg.opts.map((o, i) => `<button class="opt" data-hinge="${i}">${"ABCD"[i]}&nbsp; ${esc(o)}</button>`).join("") +
+    `<div class="row"><button class="ghost small" data-act="hingeshow">Show answer</button></div><div class="hres" hidden></div></div>`;
+}
+
+/* ---------- lesson steps ---------- */
+function renderMain() {
+  const el = $("#stage");
+  if (S.view === "revise") { el.innerHTML = reviseHTML(); el.scrollTop = 0; return; }
+  const st = cur();
+  S.sel = null;
+  el.innerHTML = ({ aims: aimsHTML, context: contextHTML, extract: extractHTML, link: linkHTML, plenary: plenaryHTML })[st.type](st);
+  if (st.type === "extract") applySel();
+  el.scrollTop = 0;
+}
+
+function aimsHTML(st) {
+  const A = DATA.hours[S.h].aims;
+  return `<section class="pane script"><div class="head"><span class="kick">About ${st.mins} min</span><h2>${esc(st.title)}</h2>${A.bridge ? `<p class="sub">${esc(A.bridge)}</p>` : ""}</div>` +
+    `<div class="li"><div class="lab">Learning intention</div><p>${esc(A.li)}</p></div>` +
+    `<div class="sc"><div class="lab">Success criteria: by the end of the lesson I can…</div><ul>${A.sc.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><p class="stretchsc"><b>Stretch:</b> ${esc(A.stretch)}</p></div>` +
+    `<div class="word"><b>Word of the lesson: ${esc(A.word.w)}</b>. It means ${esc(A.word.m)} ${esc(A.word.eg)}</div>` +
+    `<div class="lab">The bigger picture</div><ol class="path">${A.bigger.map((b) => `<li>${esc(b)}</li>`).join("")}</ol></section>` +
+    `<aside class="pane side"><h3>${esc(st.doNow.title)}</h3><p class="hint">Talk in pairs first. Tap a question to check.</p>${qaCards(st.doNow.qa)}` +
+    `<div class="row"><button class="ghost" data-act="timer" data-sec="60">Start a 1-minute timer</button></div></aside>`;
+}
+
+function contextHTML(st) {
+  const side = st.side;
+  return `<section class="pane script"><div class="head"><span class="kick">About ${st.mins} min</span><h2>${esc(st.title)}</h2><p class="sub">${esc(st.lead)}</p></div>` +
+    st.blocks.map((b) => `<div class="fact card" role="button" tabindex="0" data-reveal><h3>${esc(b.h)}</h3><p class="prompt">${esc(b.prompt || "")}</p><p class="txt">${esc(b.t)}</p><span class="tap">Talk first, then tap to check</span></div>`).join("") + `</section>` +
+    `<aside class="pane side"><h3>${esc(side.title)}</h3>${side.items.map((i) => `<div class="idea"><b>${esc(i.h)}</b><p>${esc(i.t)}</p></div>`).join("")}</aside>`;
+}
+
+function annSpans(text, notes) {
+  const marks = [];
+  notes.forEach((n) => { const i = text.indexOf(n.phrase); if (i >= 0) marks.push({ s: i, e: i + n.phrase.length, n }); });
+  marks.sort((a, b) => a.s - b.s);
+  let out = "", p = 0;
+  marks.forEach((m) => {
+    out += fmt(text.slice(p, m.s));
+    out += `<span class="ann${match(m.n) ? "" : " dim"}" data-note="${m.n.id}" role="button" tabindex="0">${fmt(text.slice(m.s, m.e))}</span>`;
+    p = m.e;
+  });
+  return out + fmt(text.slice(p));
+}
+
+function extractHTML(st) {
+  const phr = {}, rng = {}, stg = {};
+  st.notes.forEach((n) => {
+    if (n.phrase) { if (n.stage) (stg[n.stage] = stg[n.stage] || []).push(n); else (phr[n.at] = phr[n.at] || []).push(n); }
+    else for (let i = n.from; i <= n.to; i++) rng[i] = n;
+  });
+  const body = st.lines.map((l) => {
+    if (l.k === "sp") return `<div class="sp">${esc(l.t)}</div>`;
+    if (l.k === "gap") return `<div class="gapline">${fmt(l.t)}</div>`;
+    if (l.k === "st") return `<div class="stg">${l.key && stg[l.key] ? annSpans(l.t, stg[l.key]) : fmt(l.t)}</div>`;
+    const r = rng[l.n];
+    const num = l.n % 5 === 0 ? l.n : "";
+    if (r) return `<div class="ln rng${match(r) ? "" : " dim"}" data-note="${r.id}" role="button" tabindex="0"><span class="num">${num}</span><span class="tx">${fmt(l.t)}</span></div>`;
+    return `<div class="ln"><span class="num">${num}</span><span class="tx">${annSpans(l.t, phr[l.n] || [])}</span></div>`;
+  }).join("");
+  return `<section class="pane script" id="script"><div class="head"><span class="kick">${esc(st.label)} · about ${st.mins} min</span><h2>${esc(st.title)}</h2><p class="sub">${esc(st.sub)}</p></div>${body}` +
+    `<div class="foot">Text: Folger Shakespeare Library edition (folger.edu). Line numbers as printed there.</div></section>` +
+    `<aside class="pane side" id="panel" aria-live="polite"></aside>`;
+}
+
+function idlePanel(st) {
+  return `<h3>Set the scene</h3><p class="lead">${esc(st.setup)}</p>` +
+    (st.think ? `<div class="think"><b>Think first</b><p>${esc(st.think)}</p><button class="ghost small" data-act="timer" data-sec="${st.thinkSecs || 30}">Start timer</button></div>` : "") +
+    `<p class="hint">Then tap any underlined phrase or highlighted line to open its explanation. ${visible(st).length} notes showing.</p>` +
+    `<button class="ghost" data-act="firstnote">Start with the first note</button>`;
+}
+function quoteOf(st, n) {
+  if (n.phrase) return n.phrase;
+  const ls = st.lines.filter((l) => l.k === "ln" && l.n >= n.from && l.n <= n.to).map((l) => l.t);
+  return ls.length > 2 ? ls[0] + " … " + ls[ls.length - 1] : ls.join(" / ");
+}
+function notePanel(st, n) {
+  const vis = visible(st), idx = vis.findIndex((x) => x.id === n.id);
+  const tiers = (n.support || n.stretch)
+    ? `<div class="tierbtns">${n.support ? `<button class="ghost small" data-act="tog" data-t="sup">Need a starter?</button>` : ""}${n.stretch ? `<button class="ghost small" data-act="tog" data-t="str">Push further</button>` : ""}</div>` +
+      (n.support ? `<div class="tier sup" hidden><b>Sentence starter</b>${esc(n.support)}</div>` : "") +
+      (n.stretch ? `<div class="tier str" hidden><b>Stretch question</b>${esc(n.stretch)}</div>` : "")
+    : "";
+  return `<div class="ptop"><span>Note ${idx + 1} of ${vis.length}</span><button class="mini" data-act="clear">Close ✕</button></div>` +
+    `<p class="q">${fmt(quoteOf(st, n))}</p><h3>${esc(n.title)}</h3>` +
+    `<div class="lab">In plain English</div><p>${esc(n.meaning)}</p>` +
+    `<div class="lab">Why it matters</div><p>${esc(n.effect)}</p>` +
+    (n.ask ? `<div class="ask"><b>Ask the class</b><p>${esc(n.ask)}</p></div>` : "") + tiers +
+    `<div class="tagrow">${n.tags.map((t) => `<span class="chip tg-${t}"><i class="dot"></i>${esc(DATA.TAGS[t])}</span>`).join("")}</div>` +
+    `<div class="notenav"><button data-act="pn">◀ Previous note</button><button data-act="nn">Next note ▶</button></div>`;
+}
+function applySel() {
+  const st = cur();
+  document.querySelectorAll("[data-note]").forEach((el) => el.classList.toggle("on", el.dataset.note === S.sel));
+  const panel = $("#panel");
+  if (!panel) return;
+  const n = S.sel && byId(st, S.sel);
+  panel.innerHTML = n ? notePanel(st, n) : idlePanel(st);
+  if (n) {
+    const first = document.querySelector(`[data-note="${S.sel}"]`);
+    const smooth = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (first) first.scrollIntoView({ block: "center", behavior: smooth ? "smooth" : "auto" });
+  }
+  panel.scrollTop = 0;
+}
+function select(id) { S.sel = id; applySel(); }
+function stepNote(d) {
+  const st = cur(), vis = visible(st);
+  if (!vis.length) return;
+  let i = vis.findIndex((n) => n.id === S.sel);
+  i = i < 0 ? (d > 0 ? 0 : vis.length - 1) : (i + d + vis.length) % vis.length;
+  select(vis[i].id);
+}
+
+function linkHTML(st) {
+  const { html, bank } = clozeParts(st.text);
+  return `<section class="pane script"><div class="head"><span class="kick">About ${st.mins} min</span><h2>${esc(st.title)}</h2><p class="sub">Read aloud and tap each gap to reveal the word.</p></div>` +
+    `<p class="cloze">${html}</p>` +
+    (st.ext ? `<p class="stretchsc" style="margin-top:1.2rem"><b>Stretch:</b> ${esc(st.ext)}</p>` : "") + `</section>` +
+    `<aside class="pane side"><h3>Word bank</h3><div class="bank">${bank.map((a) => `<span>${esc(a)}</span>`).join("")}</div>` +
+    `<div class="row"><button class="ghost" data-act="reveal">Reveal all</button></div>` +
+    `<div class="track"><p>${esc(st.track)}</p></div>` + (st.hinge ? hingeHTML(st.hinge) : "") + `</aside>`;
+}
+
+function plenaryHTML(st) {
+  return `<section class="pane script"><div class="head"><span class="kick">About ${st.mins} min</span><h2>${esc(st.title)}</h2><p class="sub">Answer on your handout first. Then tap a question to check.</p></div>${qaCards(st.ticket)}</section>` +
+    `<aside class="pane side"><h3>Rate yourself</h3><p class="hint">How well can you do each of today’s success criteria?</p><div id="ratings">${ratingHTML(S.h)}</div><div class="track"><p>${esc(st.next)}</p></div></aside>`;
+}
+
+/* ---------- revise mode (for home) ---------- */
+function reviseNotes() {
+  const out = [];
+  DATA.hours.forEach((h) => h.steps.filter((s) => s.type === "extract").forEach((st) => st.notes.filter((n) => n.revise).forEach((n) => out.push({ st, n }))));
+  return out;
+}
+function refText(st, n) {
+  const ln = n.at !== undefined ? `line ${n.at}` : n.from !== undefined ? (n.from === n.to ? `line ${n.from}` : `lines ${n.from}–${n.to}`) : "";
+  return `Act 1 Scene ${st.scene.split(".")[1]}${ln ? ", " + ln : ""}`;
+}
+function reviseHTML() {
+  const tabs = [["quotes", "Key quotes"], ["quiz", "Quick quiz"], ["gaps", "Gap-fills"], ["ready", "Am I ready?"]];
+  const head = `<div class="head"><h2>Revise Act 1</h2><p class="intro">Try to answer before you reveal. Nothing here is marked, so mistakes are useful.</p></div>` +
+    `<nav class="tabs" aria-label="Revision sections">${tabs.map(([k, l]) => `<button class="tab${S.rev.tab === k ? " on" : ""}" data-tab="${k}">${l}</button>`).join("")}</nav>`;
+  let body = "";
+  if (S.rev.tab === "quotes") {
+    const all = reviseNotes();
+    const cards = all.filter(({ n }) => tagOK(n, S.rev.tag));
+    body = `<div class="filters" style="padding-left:0;border:0">${chipRow(all.map((x) => x.n), S.rev.tag)}</div><p class="intro">Read the quotation. Say what it shows about Macbeth or Banquo. Then tap to check.</p>` +
+      `<div class="qgrid">${cards.map(({ st, n }) => `<div class="qcard" role="button" tabindex="0" data-qcard><p class="qt">${fmt(quoteOf(st, n))}</p><p class="qr">${esc(refText(st, n))}</p>` +
+        `<div class="qb"><p><b>${esc(n.title)}.</b> ${esc(n.meaning)}</p><p>${esc(n.effect)}</p>${n.support ? `<p><b>Sentence starter:</b> ${esc(n.support)}</p>` : ""}${n.stretch ? `<p><b>Stretch:</b> ${esc(n.stretch)}</p>` : ""}` +
+        `<div class="tagrow">${n.tags.map((t) => `<span class="chip tg-${t}"><i class="dot"></i>${esc(DATA.TAGS[t])}</span>`).join("")}</div></div></div>`).join("")}</div>`;
+  } else if (S.rev.tab === "quiz") {
+    body = quizHTML();
+  } else if (S.rev.tab === "gaps") {
+    let n = 0;
+    DATA.hours.forEach((h) => { let last = null; h.steps.forEach((st) => {
+      if (st.type === "extract") last = st;
+      if (st.type === "link") {
+        n++;
+        const { html, bank } = clozeParts(st.text);
+        body += `<div class="gapcard"><h3>${esc(h.title)}: after ${esc(last ? last.title : "the start")}</h3><p class="cloze">${html}</p><div class="bank">${bank.map((a) => `<span>${esc(a)}</span>`).join("")}</div>` +
+          (st.ext ? `<p class="stretchsc"><b>Stretch:</b> ${esc(st.ext)}</p>` : "") + `<div class="row"><button class="ghost small" data-act="revealcard">Reveal all</button></div></div>`;
+      }
+    }); });
+    body = `<p class="intro">Fill the gaps in your head or on paper. Then tap a gap to check it.</p>` + body;
+  } else {
+    body = `<p class="intro">Rate yourself against each success criterion. Your choices stay on this device only.</p>` +
+      DATA.hours.map((h, i) => `<div class="gapcard"><h3>${esc(h.title)}</h3><p>${esc(h.aims.li)}</p><div id="ratings-${i}" class="ratings-h">${ratingHTML(i)}</div></div>`).join("");
+  }
+  return `<section class="pane wide revise">${head}${body}</section>`;
+}
+function quizHTML() {
+  const Q = DATA.QUIZ;
+  let z = S.rev.quiz;
+  if (!z) return `<div class="qz"><h3>Quick quiz</h3><p class="intro">${Q.length} questions on Lessons 1 and 2. Pick an answer to see why.</p><button class="ghost primary" data-act="qstart">Start the quiz</button></div>`;
+  if (z.done) return `<div class="qz"><h3>Finished</h3><p class="score">${z.score} out of ${Q.length}</p><p class="intro">${z.score === Q.length ? "Every question right. Try the stretch questions in Key quotes." : "Go back to Key quotes or Gap-fills for anything that surprised you, then try again."}</p><button class="ghost primary" data-act="qstart">Try again</button></div>`;
+  const q = Q[z.order[z.i]];
+  return `<div class="qz"><span class="qn">Question ${z.i + 1} of ${Q.length}</span><h3>${esc(q.q)}</h3>` +
+    q.opts.map((o, i) => `<button class="opt${z.picked !== null ? (i === q.correct ? " right" : i === z.picked ? " wrong" : "") : ""}" data-qopt="${i}" ${z.picked !== null ? "disabled" : ""}>${"ABCD"[i]}&nbsp; ${esc(o)}</button>`).join("") +
+    (z.picked !== null ? `<p class="why"><b>${z.picked === q.correct ? "Correct." : "Not quite."}</b> ${esc(q.why)}</p><button class="ghost primary" data-act="qnext">${z.i + 1 === Q.length ? "See my score" : "Next question"}</button>` : "") + `</div>`;
+}
+function qstart() {
+  const order = DATA.QUIZ.map((_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+  S.rev.quiz = { order, i: 0, score: 0, picked: null, done: false };
+}
+
+/* ---------- navigation ---------- */
+function renderAll() { renderTop(); renderFilters(); renderMain(); renderNav(); }
+function go(h, s) { S.view = "lesson"; S.h = h; S.s = s; S.sel = null; renderAll(); }
+function move(d) {
+  let h = S.h, s = S.s + d;
+  if (s < 0) { if (h === 0) return; h--; s = DATA.hours[h].steps.length - 1; }
+  else if (s >= DATA.hours[h].steps.length) { if (h === DATA.hours.length - 1) return; h++; s = 0; }
+  go(h, s);
+}
+
+/* ---------- timer ---------- */
+const T = { id: null, end: 0 };
+const mmss = (s) => Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+function timerStart(sec) {
+  clearInterval(T.id);
+  const el = $("#timer"); el.hidden = false; el.classList.remove("done");
+  T.end = Date.now() + sec * 1000;
+  const tick = () => {
+    const left = Math.max(0, Math.ceil((T.end - Date.now()) / 1000));
+    $("#tt").textContent = left > 0 ? mmss(left) : "Time!";
+    if (left <= 0) { clearInterval(T.id); el.classList.add("done"); }
+  };
+  tick(); T.id = setInterval(tick, 250);
+}
+function timerStop() { clearInterval(T.id); $("#timer").hidden = true; }
+
+/* ---------- events ---------- */
+function syncReveal(scope) {
+  const btn = (scope || document).querySelector('[data-act="reveal"],[data-act="revealcard"]');
+  if (!btn) return;
+  const gaps = [...(scope || document).querySelectorAll(".gap")];
+  btn.textContent = gaps.length && gaps.every((g) => g.classList.contains("open")) ? "Hide all" : "Reveal all";
+}
+function hingeMark(box, hg, picked) {
+  box.querySelectorAll(".opt").forEach((o, j) => { o.classList.toggle("right", j === hg.correct); o.classList.toggle("wrong", picked !== null && j === picked && j !== hg.correct); });
+  const res = box.querySelector(".hres"); res.hidden = false;
+  res.innerHTML = `<b>${picked === null ? "Answer:" : picked === hg.correct ? "Correct." : "Not quite."}</b> ${esc(hg.why)}`;
+}
+document.addEventListener("click", (e) => {
+  const t = e.target;
+  if (!t.closest("#tbtn,#tmenu")) $("#tmenu").hidden = true;
+  const note = t.closest("[data-note]");
+  if (note) { select(note.dataset.note); return; }
+  const gap = t.closest("[data-gap]");
+  if (gap) { gap.classList.toggle("open"); syncReveal(gap.closest(".gapcard") || document); return; }
+  const qa = t.closest("[data-qa]");
+  if (qa) { qa.classList.toggle("open"); return; }
+  const fact = t.closest("[data-reveal]");
+  if (fact) { fact.classList.toggle("open"); return; }
+  const qc = t.closest("[data-qcard]");
+  if (qc) { qc.classList.toggle("open"); return; }
+  const hb = t.closest("[data-hinge]");
+  if (hb) { hingeMark(hb.closest(".hinge"), cur().hinge, +hb.dataset.hinge); return; }
+  const rate = t.closest("[data-rate]");
+  if (rate) {
+    const [h, i, v] = rate.dataset.rate.split(":");
+    S.rate[h + ":" + i] = +v; saveRate();
+    const box = rate.closest("#ratings, .ratings-h");
+    if (box) box.innerHTML = ratingHTML(+h);
+    return;
+  }
+  const qo = t.closest("[data-qopt]");
+  if (qo) {
+    const z = S.rev.quiz, q = DATA.QUIZ[z.order[z.i]];
+    if (z.picked === null) { z.picked = +qo.dataset.qopt; if (z.picked === q.correct) z.score++; $("#stage").innerHTML = reviseHTML(); }
+    return;
+  }
+  const b = t.closest("button");
+  if (!b) return;
+  if (b.closest("#tmenu")) { timerStart(+b.dataset.sec); $("#tmenu").hidden = true; return; }
+  if (b.dataset.view === "revise") { S.view = "revise"; renderAll(); return; }
+  if (b.dataset.h !== undefined) return go(+b.dataset.h, 0);
+  if (b.dataset.s !== undefined) return go(S.h, +b.dataset.s);
+  if (b.dataset.tab) { S.rev.tab = b.dataset.tab; $("#stage").innerHTML = reviseHTML(); return; }
+  if (b.dataset.tag !== undefined) {
+    if (S.view === "revise") { S.rev.tag = b.dataset.tag; $("#stage").innerHTML = reviseHTML(); return; }
+    S.tag = b.dataset.tag;
+    const st = cur();
+    if (S.sel && !match(byId(st, S.sel))) S.sel = null;
+    renderFilters();
+    const keep = $("#script") ? $("#script").scrollTop : 0;
+    $("#stage").innerHTML = extractHTML(st);
+    applySel();
+    if ($("#script")) $("#script").scrollTop = keep;
+    return;
+  }
+  switch (b.dataset.act) {
+    case "next": move(1); break;
+    case "prev": move(-1); break;
+    case "nn": stepNote(1); break;
+    case "pn": stepNote(-1); break;
+    case "firstnote": stepNote(1); break;
+    case "clear": S.sel = null; applySel(); break;
+    case "tog": { const el = $("#panel ." + b.dataset.t); if (el) { el.hidden = !el.hidden; if (!el.hidden) el.scrollIntoView({ block: "nearest" }); } break; }
+    case "timer": timerStart(+b.dataset.sec); break;
+    case "tstop": timerStop(); break;
+    case "hingeshow": hingeMark(b.closest(".hinge"), cur().hinge, null); break;
+    case "qstart": qstart(); $("#stage").innerHTML = reviseHTML(); break;
+    case "qnext": { const z = S.rev.quiz; z.i++; z.picked = null; if (z.i >= DATA.QUIZ.length) z.done = true; $("#stage").innerHTML = reviseHTML(); break; }
+    case "reveal": case "revealcard": {
+      const scope = b.closest(".gapcard") || document;
+      const gaps = scope.querySelectorAll(".gap");
+      const allOpen = [...gaps].every((g) => g.classList.contains("open"));
+      gaps.forEach((g) => g.classList.toggle("open", !allOpen));
+      syncReveal(scope);
+      break;
+    }
+  }
+});
+document.addEventListener("keydown", (e) => {
+  if ((e.key === "Enter" || e.key === " ") && e.target.matches("[role=button]")) { e.preventDefault(); e.target.click(); return; }
+  if (e.target.matches("input,textarea") || S.view !== "lesson") return;
+  if (e.key === "ArrowRight") move(1);
+  else if (e.key === "ArrowLeft") move(-1);
+  else if (e.key === "Escape" && S.sel) { S.sel = null; applySel(); }
+  else if (e.key === "]") stepNote(1);
+  else if (e.key === "[") stepNote(-1);
+});
+
+/* tools */
+function setScale(d) {
+  S.scale = Math.min(1.6, Math.max(0.75, +(S.scale + d).toFixed(2)));
+  document.documentElement.style.setProperty("--scale", S.scale);
+}
+$("#fsm").addEventListener("click", () => setScale(-0.1));
+$("#fsp").addEventListener("click", () => setScale(0.1));
+$("#tbtn").addEventListener("click", () => { $("#tmenu").hidden = !$("#tmenu").hidden; });
+function effectiveTheme() { return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); }
+function syncTheme() { $("#theme").textContent = effectiveTheme() === "dark" ? "Day mode" : "Night mode"; }
+$("#theme").addEventListener("click", () => { document.documentElement.dataset.theme = effectiveTheme() === "dark" ? "light" : "dark"; syncTheme(); });
+$("#full").addEventListener("click", () => {
+  try { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen(); } catch (err) { /* not available */ }
+});
+syncTheme();
+renderAll();
+</script>
+</body>
+</html>
